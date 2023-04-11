@@ -1,0 +1,16 @@
+HTTP/1.1 404 Not Found
+Server: nginx/1.18.0 (Ubuntu)
+Date: Tue, 11 Apr 2023 04:39:08 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 66
+Connection: keep-alive
+content-security-policy: upgrade-insecure-requests
+referrer-policy: strict-origin-when-cross-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+vary: origin
+access-control-expose-headers: WWW-Authenticate,Server-Authorization
+cache-control: no-cache
+
+{"message":"Pesanan gagal, kopi tidak ditemukan!","success":false}
