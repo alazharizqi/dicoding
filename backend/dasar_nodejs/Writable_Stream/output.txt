@@ -1,0 +1,3 @@
+Ini baris pertama
+Ini baris kedua
+Akhir dari writable stream
