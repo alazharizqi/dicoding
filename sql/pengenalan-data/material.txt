@@ -1,0 +1,117 @@
+Mengenal Data
+
+Menurut Kamus Besar Bahasa Indonesia, data merupakan keterangan yang benar dan nyata; keterangan atau bahan nyata yang dapat dijadikan dasar kajian; informasi dalam bentuk yang dapat diproses oleh komputer, seperti representasi digital dari teks, angka, gambar grafis, atau suara.
+
+Jenis-Jenis Data
+- Data Terstruktur
+- Data Tidak Terstruktur
+- Data Semi Terstruktur
+
+- Data Numerik
+Data numerik adalah data berwujud angka yang bisa didapat dari sebuah pengukuran. Misal, ukuran tinggi badan, berat badan, dan tekanan darah kita. Selain itu, data ini juga bisa diperoleh dari sebuah penghitungan, misalnya jumlah orang yang hadir di pesta pernikahan. Nah, data numerik ini ternyata masih bisa dibagi menjadi beberapa jenis lagi, di antaranya data diskrit dan data kontinu.
+
+- Data Kontinu
+Data kontinu dapat direpresentasikan dalam berbagai nilai numerik, seperti bilangan desimal, bulat, dan lain-lain. Contohnya, setelah datangnya pandemi, saat Anda akan memasuki kapal feri menuju Banda Neira, Anda diminta untuk cek suhu terlebih dahulu. Setelah dilihat suhu Anda menunjukan 36.2 derajat Celcius. Lalu, data tersebut dicocokkan dengan persyaratan masuk ke dalam feri untuk dikategorikan.
+
+- Data Diskrit
+Data diskrit merupakan data numerik yang hanya bisa direpresentasikan dengan bilangan bulat dan tidak dapat dibagi ke dalam unit yang lebih kecil. Mari kita ambil contoh. Setelah Anda diperiksa suhu ketika memasuki kapal feri, Anda melihat ternyata jumlah penumpang kapal menuju Banda Neira sebanyak 125 orang.
+
+Tipe-Tipe Data
+Tipe-tipe data merupakan hal penting yang perlu Anda pelajari sebelum memulai pemrograman karena hal ini akan menjadi rutinitas yang akan Anda temui setiap mempelajarinya. Tentunya, banyak sekali tipe-tipe data dalam bahasa pemrograman seperti Integer, Character, Boolean, Array, String, dan Float.
+
+
+Data, Basis Data, Dataset
+
+Dataset
+Dataset adalah kumpulan data yang diatur dalam format tertentu, seperti spreadsheet, CSV, atau basis data. Umumnya, digunakan untuk keperluan yang spesifik.
+Contoh tools: Google Spreadsheet, Excel, Situs Public Datasets, dll.
+
+Basis Data
+Basis data adalah kumpulan data yang diatur dan disimpan dengan cara yang memungkinkan akses dan pengambilan yang mudah. Serta dapat menyimpan berbagai macam tipe data, termasuk teks, nomor, gambar, dan tipe data lainnya.
+Contoh tools: BigQuery, MySQL Clients, DB Browser SQL, dll.
+
+
+Basis Data Relasional
+Basis data relasional pada dasarnya adalah cara menyusun informasi dalam tabel, baris, dan kolom atau kumpulan item data dengan hubungan yang telah ditentukan sebelumnya.
+
+Catatan: 
+
+    Baris pada tabel merepresentasikan kumpulan nilai terkait dari satu objek atau entitas.
+    Tiap baris pada tabel dapat ditandai dengan pengidentifikasi untuk yang disebut Primary Key, dan baris di antara beberapa tabel dapat dibuat saling terkait menggunakan Foreign Key (Akan dijelaskan pada kelas berikutnya, di kelas ini kita akan fokus pada penggunaan tabel tanpa relasi dengan tabel lain).
+    Data tersebut dapat diakses dengan berbagai cara tanpa menyusun ulang tabel basis data itu sendiri.
+
+Di bawah ini merupakan istilah-istilah dalam basis data relasional.
+    Relasi (Relation)
+    Relasi atau tabel terdiri dari beberapa kolom dan beberapa baris. Relasi menggambarkan beberapa atribut atau entitas-entitas di dalamnya. Contohnya, pada tabel destinasi di atas tertera bahwa tabel tersebut memiliki tiga kolom yang terdiri dari atribut 1, atribut 2, dan atribut 3 yang merepresentasikan nilai berbeda-beda.
+
+    Derajat (Degree)
+    Derajat merupakan jumlah atribut dalam sebuah relasi. Masih merujuk pada tabel di atas, berarti tabel tersebut memiliki derajat tiga karena terdiri dari tiga atribut.
+
+    Tupel (Tuple)
+    Baris pada sebuah relasi. Sebelumnya, Anda telah mempelajari perbedaan antara baris dan kolom. Setiap baris merujuk satu objek data. Perhatikan kembali pada tabel di atas, tabel tersebut memiliki lima objek data.
+
+    Kardinalitas (Cardinality)
+    Jumlah tupel dalam sebuah relasi. Tiap-tiap baris tentunya memiliki atribut yang sejenis. Merujuk pada tabel di atas, berarti tabel tersebut memiliki lima kardinalitas.
+
+Basis Data NoSQL
+
+NoSQL atau Not Only SQL adalah sebuah mekanisme penyimpanan dan pengambilan data, dalam pengambilan data tersebut tidak dibatasi dan memiliki konsistensi yang lebih baik dibandingkan dengan basis data relasional, serta tidak dibatasi tipe data dan variasi data.
+
+Sebelum mengenal lebih jauh terkait perbedaan antara SQL dan NoSQL, di bawah ini merupakan hal yang perlu diketahui ketika Anda membutuhkan NoSQL.
+
+    Basis Data Relasional tidak restriktif. Ketika basis data relasional sudah tidak bisa menangani data yang bersifat restriktif, yaitu data yang terdistribusi atau data yang bermacam-macam variasinya, maka solusinya adalah menggunakan NoSQL.
+    Ketika ACID sudah tidak dibutuhkan. Dalam konteks pemrosesan transaksi, terdapat ACID yang mengacu pada empat sifat utama transaksi, yaitu
+Atomicity
+Semua perubahan pada data dilakukan seolah-olah itu adalah satu operasi. Misalnya, dalam aplikasi yang mentransfer dana dari satu akun ke akun lainnya, properti atomocity atau atomisitas memastikan bahwa, jika debit berhasil dibuat dari satu akun, kredit yang sesuai dibuat ke akun lainnya.
+
+Consistency
+Data berada dalam status konsisten saat transaksi dimulai dan diakhiri. Misalnya, dalam aplikasi yang mentransfer dana dari satu akun ke akun lainnya, properti konsistensi memastikan bahwa nilai dana di kedua akun sama di awal dan di akhir setiap transaksi.
+
+Isolation
+Keadaan perantara dari suatu transaksi tidak terlihat oleh transaksi lain. Misalnya, dalam aplikasi yang mentransfer dana dari satu akun ke akun lainnya, properti isolasi memastikan bahwa transaksi lain melihat dana yang ditransfer di satu akun atau akun lainnya, tetapi tidak di keduanya, atau tidak keduanya.
+
+Durability
+Setelah transaksi berhasil diselesaikan, perubahan pada data tetap ada dan tidak dibatalkan, bahkan jika terjadi kegagalan sistem. Misalnya, dalam aplikasi yang mentransfer dana dari satu akun ke akun lainnya, properti durability atau daya tahan memastikan bahwa perubahan yang dilakukan pada setiap akun tidak akan dibatalkan.
+
+
+Ketika ACID sudah tidak dibutuhkan, sistem yang tidak memenuhi kriteria ACID disebut dengan BASE, yaitu Basically Available, Soft State, dan Eventual Consistent. Sebagian besar NoSQL saat ini adalah BASE.
+
+Adanya hambatan antara objek untuk berelasi.
+
+RDBMS sudah tidak berdistribusi dan tidak scalable. Artinya ketika basis data relasional sudah tidak bisa dikembangkan lagi karena tidak bisa dibuat menjadi sistem terdistribusi.
+
+Dipakai ketika kita mengambil data yang sifatnya temporal (sementara). Temporal data di antaranya adalah shopping chart dan wish list. Contoh shopping chart adalah ketika Anda berjualan, dan stoknya habis, maka data tersebut merupakan data temporal. Kemudian, ada wish list belanja pada sebuah marketplace, ketika wish list tersebut sudah tercapai maka data tersebut akan hilang dari wish list.
+
+
+
+perbedaan yang menonjol antara SQL dan NoSQL
+Tipe Basis Data
+- SQL
+SQL pada dasarnya berbasis Sistem Manajemen Relasional Basis Data atau Relational Database Management System (RDBMS), yaitu mereka menyimpan data dalam tabel dengan kolom yang telah ditentukan sebelumnya dan bergantung pada skema tabel tetap untuk menghubungkan catatan data satu sama lain.
+- NoSQL
+Basis data NoSQL adalah basis data non-relasional (terdistribusi) jadi tidak memerlukan tabel. Maka dari itu, basis data non-relasional dapat menyimpan data tidak terstruktur menggunakan dokumen, nilai kunci, grafik, atau kolom.
+
+Jenis Skala
+- SQL
+Basis data SQL memiliki jenis skala vertikal. Ini berarti bahwa kebanyakan basis data ini hanya menggunakan satu server. Untuk menambahkan skala, Anda dapat menambahkan RAM atau CPU atau SSD yang mengakibatkan bertambahnya biaya untuk upscale SQL. Hal tersebut merupakan cara satu-satunya untuk dapat meningkatkan kapasitas server agar dapat menyimpan lebih banyak data.
+- NoSQL
+Basis data NoSQL dapat diskalakan secara horizontal. NoSQL dapat menggunakan banyak server dan berbagi data di seluruh server sehingga dapat menangani lebih banyak data. NoSQL menggunakan hardware berbiaya rendah. Ini membuatnya lebih mudah untuk upscale karena jumlah data bertambah dan basis data NoSQL bisa menjadi jauh lebih besar dibandingkan dengan basis data SQL yang hanya bergantung pada satu server.
+
+Kapasitas Volume Data
+- SQL
+Karena terbatasnya penyimpanan, basis data SQL akan mengalami kapasitas data yang penuh. Satu server hanya dapat menampung data sebelum mencapai kapasitas maksimumnya. Membeli server yang semakin besar, menjadikan SQL menjadi basis data yang tergolong mahal apabila ingin memiliki kapasitas yang besar.
+- NoSQL
+Di sisi lain, basis data NoSQL dapat menangani volume data yang lebih tinggi karena dapat mendistribusikan data-data tersebut ke ribuan server yang terhubung. Untuk sebuah organisasi/perusahaan yang perlu menyimpan data tidak terstruktur dalam jumlah besar, basis data NoSQL adalah pilihan yang jelas.
+
+
+Aljabar Relasional
+Sebenarnya basis data relasional memiliki hubungan dengan aljabar relasional yang berasal dari aljabar matematika, lho. Seperti sigma, phi, rho, dan masih banyak lagi.
+
+First thing first,relational algebra atau aljabar relasional merupakan kumpulan operasi terhadap relasi dan setiap operasi menggunakan satu atau lebih relasi untuk menghasilkan satu relasi yang baru.
+
+Pada dasarnya, operasi aljabar relasional terdiri dari selection, projection, cartesian, union, set-difference, dan rename.
+
+Adapun operasi lain yang merupakan turunan aljabar relasional, yaitu set intersection, theta join, natural-join, outer join, dan division.
+
+
+terakhir sampai operator unary dan binary
