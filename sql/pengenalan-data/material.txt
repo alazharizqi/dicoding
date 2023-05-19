@@ -114,4 +114,70 @@ Pada dasarnya, operasi aljabar relasional terdiri dari selection, projection, ca
 Adapun operasi lain yang merupakan turunan aljabar relasional, yaitu set intersection, theta join, natural-join, outer join, dan division.
 
 
-terakhir sampai operator unary dan binary
+Operasi-operasi di atas terbagi kembali menjadi dua jenis, yaitu operasi unary dan operasi binary. Simak penjelasannya di bawah ini.
+
+    Operasi unary terdiri dari selection, projection. Ia disebut operasi unary karena dapat digunakan hanya pada satu tabel.
+    Operasi binary terdiri dari union, intersection, set difference, cartesian product, join, dan division. Ia disebut operasi binary karena memerlukan pasangan/kumpulan tabel.
+
+Nah, di kelas dasar ini Anda hanya akan mempelajari terkait operasi unary yang hanya terdiri dari selection dan projection. Namun, jangan khawatir! Anda akan mempelajari operasi binary dengan operasi-operasi lainnya dalam pembahasan kelas selanjutnya.
+
+Oh, iya! Perlu Anda ketahui bahwa setiap operasi aljabar relasional menghasilkan relasi baru. Sebagaimana yang disebutkan sebelumnya bahwa relasi terdiri dari beberapa kolom dan beberapa baris. Relasi menggambarkan beberapa atribut atau entitas-entitas di dalamnya. Nah, masing-masing operator tersebut beroperasi pada satu relasi atau lebih atau menghasilkan relasi-relasi lain sebagai hasil.
+
+Mari kita simak operasi yang pertama, yaitu selection di bawah ini.
+
+
+Operasi Selection 
+
+Selection atau select () adalah operasi untuk menyeleksi tupel-tupel yang memenuhi suatu predikat. Kita dapat menggunakan operator perbandingan (<,>,>=,<=,=,#) pada predikat.
+
+Pada dasarnya, operasi selection atau select ini berasal dari persamaan sederhana matematika yang diaplikasikan untuk kebutuhan query yang memiliki lambang sigma ().
+
+Beberapa predikat dapat dikombinasikan menjadi predikat majemuk (banyak) menggunakan penghubung AND (Λ) dan OR (V).
+
+
+    Keterangan:
+
+    dos:15d560bd2dee6e2a7210ba2e32a1e7df20230503161443.png dibaca sigma.
+
+    dos:d2122fe1b6e42fed6c91cd915da1372720230503161511.png disebut selection predicate (yang menentukan pemilihan), yaitu formula dari kalkulus perbandingan yang berisi terms yang dihubungkan oleh ^ (and), v (or), ~ (not).
+
+
+    Setiap term salah satu dari
+
+    <atribut> op <atribut> or <konstanta>
+
+
+    atau
+
+
+    <atribut> op <atribut>
+
+
+    dengan op salah satu dari =, , >, , <, atau .
+
+    Contoh: “Denpasar, Bali”  Nusa Penida
+
+Simak penjelasan di bawah ini agar Anda lebih memahami operasi selection.
+
+Contoh: Dilakukan operasi  dari = Alun-Alun Bandung pada tabel destinasi sebagai berikut.
+Dalam bentuk kalimat sehari-hari: “Pilih informasi dari tabel destinasi, dimana asalnya (DARI) Alun-Alun Bandung”.
+
+
+Hasilnya: suatu relasi dengan tupel-tupel yang memiliki jenis sama dengan alun-alun bandung.
+
+
+Operasi Projection
+
+Projection atau project adalah operasi untuk memperoleh kolom-kolom tertentu. Operasi project termasuk dalam operasi unary yang mengirim relasi argumen dengan kolom-kolom tertentu. Sebab relasi himpunan, baris-baris duplikasi dihilangkan.
+
+
+Keterangan:
+
+dos:7cdc332eafb5e64d9489f2f138679def20230503161336.pngdibaca phi.
+
+Hasil dari notasi tersebut adalah suatu tabel dengan atribut yang tercantum pada daftar nama atribut pada operasi.
+
+Contoh: Dilakukan operasi dos:cb856ecb4599fa5ad9e65fa274769a2520230503161622.jpegNO ID, NAMA, TOTAL HARGA pada tabel sirkulasi di bawah ini.
+Dalam bentuk kalimat sehari-hari: “Pilih dari tabel sirkulasi, tampilkan hanya informasi NO ID, NAMA, dan TOTAL HARGA”
+
+

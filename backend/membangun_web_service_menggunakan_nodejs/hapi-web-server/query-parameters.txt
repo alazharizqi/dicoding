@@ -1,0 +1,12 @@
+Query Parameters
+
+Selain path parameter, terdapat cara lain yang sering digunakan dalam mengirimkan data melalui URL, yakni dengan query parameter. Teknik ini umum digunakan pada permintaan yang membutuhkan kueri dari client, contohnya seperti pencarian dan filter data. 
+
+Data yang dikirim melalui query memiliki format key=value.
+
+
+    localhost:5000?name=harry&location=bali
+
+Contoh di atas memiliki dua query parameter. Yang pertama adalah name=harry dan location=bali. Di Hapi, Anda bisa mendapatkan nilai dari query parameter melalui request.query.
+
+
