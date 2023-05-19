@@ -1,0 +1,60 @@
+Menyiapkan Proyek
+
+Seperti biasa, mari kita awali dengan membuat proyek baru. Sudah tahu kan caranya? Jika belum, silakan ikuti langkah berikut:
+
+    Buat folder baru dengan nama “notes-app-back-end” pada C -> javascript-projects (Windows) atau Home -> javascript-projects (Linux).
+    Buka folder tersebut menggunakan VSCode.
+    Buka Terminal proyek dan eksekusi perintah npm init --y.
+
+    Pastikan terdapat berkas package.json pada proyek Anda.
+
+Voila! Proyek baru berhasil dibuat.
+
+Sebelum membuat berkas JavaScript, kita akan gunakan dua tools tambahan untuk memudahkan proses pengembangan web server. Jadi, mari kita siapkan kedua tools tersebut. Apa saja?
+Nodemon
+
+Tools pertama adalah nodemon, ia bisa dikatakan wajib digunakan selama proses pengembangan. Pasalnya, dengan tools ini kita tak perlu menjalankan ulang server ketika terjadi perubahan pada berkas JavaScript. Nodemon akan mendeteksi perubahan kode JavaScript dan mengeksekusi ulang secara otomatis.
+
+Untuk menggunakannya, pasanglah package nodemon pada devDependencies dengan mengeksekusi perintah berikut di Terminal proyek:
+
+    npm install nodemon --save-dev
+
+Untuk memastikan nodemon terpasang pada proyek, Anda bisa memeriksa berkas package.json, lebih tepatnya di objek devDependencies.
+
+    package.json
+
+    {
+      "name": "notes-app-back-end",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC",
+      "devDependencies": {
+        "nodemon": "^2.0.7"
+      }
+    }
+
+Bila package berhasil terpasang, Anda bisa lihat properti nodemon dan versi yang digunakan di sana.
+
+Untuk mencoba nodemon, silakan buat berkas JavaScript dulu pada proyek kita dan berikan nama “server.js”. Di dalamnya, tulislah kode berikut:
+
+    server.js
+
+    console.log('Hallo kita akan membuat RESTful API');
+
+Kemudian di dalam package.json, buat npm runner script baru untuk menjalankan server.js menggunakan nodemon.
+
+    "scripts": {
+        "start": "nodemon server.js"
+     },
+
+    Anda bisa menghapus runner script test karena saat ini tidak digunakan.
+
+Lalu, jalankan perintah npm run start pada Terminal.
+
+Nodemon berhasil mengeksekusi server.js dan akan terus mengawasi perubahan kode yang ada. Yuhu! Kini Anda tidak perlu menjalankan ulang perintah npm run start setiap terjadi perubahan pada berkas JavaScript. Cukup simpan perubahannya dan nodemon akan menjalankan ulang secara otomatis.

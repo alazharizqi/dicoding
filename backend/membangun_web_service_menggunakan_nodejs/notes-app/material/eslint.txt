@@ -1,0 +1,89 @@
+ESLint
+
+Tools yang kedua adalah ESLint, ia dapat membantu atau membimbing Anda untuk selalu menuliskan kode JavaScript dengan gaya yang konsisten. Seperti yang Anda tahu, JavaScript tidak memiliki aturan yang baku untuk gaya penulisan kode, bahkan penggunaan semicolon. Karena itu, terkadang kita jadi tidak konsisten dalam menuliskannya.
+
+ESLint dapat mengevaluasi kode yang dituliskan berdasarkan aturan yang Anda terapkan. Anda bisa menuliskan aturannya secara mandiri atau menggunakan gaya penulisan yang sudah ada seperti AirBnb JavaScript Code Style, Google JavaScript Code Style, dan StandardJS Code Style. Kami sarankan Anda untuk mengikuti salah satu code style yang ada. Mengapa begitu? Jawabannya karena code style tersebut sudah banyak digunakan oleh JavaScript Developer di luar sana.
+
+Untuk menggunakan ESLint, pasanglah package ESLint pada devDependencies proyek Anda. Caranya, silakan eksekusi perintah berikut di Terminal:
+
+    npm install eslint --save-dev
+
+Sama seperti package nodemon, setelah berhasil terpasang, package eslint akan muncul di package.json lebih tepatnya pada devDependencies.
+
+    {
+      "name": "notes-app-back-end",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "start": "nodemon server.js"
+      },
+      "keywords": [],
+      "author": "",
+      "license": "ISC",
+      "devDependencies": {
+        "eslint": "^7.19.0",
+        "nodemon": "^2.0.7"
+      }
+    }
+
+Sebelum digunakan, Anda perlu melakukan konfigurasi terlebih dahulu. Caranya dengan menggunakan perintah berikut di Terminal proyek.
+
+    npx eslint --init
+
+Kemudian Anda akan diberikan beberapa pertanyaan, silakan jawab pertanyaan yang ada dengan jawaban berikut:
+
+    How would you like to use ESLint? -> To check, find problems, and enforce code style.
+    What type of modules does your project use? -> CommonJS (require/exports).
+    Which framework did you use? -> None of these. 
+    Does your project use TypeScript? -> N.
+    Where does your code run? -> Node (pilih menggunakan spasi).
+    How would you like to define a style for your project? -> Use a popular style guide.
+    Which style guide do you want to follow? -> (Anda bebas memilih, sebagai contoh pilih AirBnB).
+    What format do you want your config file to be in? -> JSON.
+
+    Would you like to …… (seluruh pertanyaan selanjutnya) -> Y.
+
+Setelah menjawab seluruh pertanyaan yang diberikan, maka akan terbentuk berkas konfigurasi eslint dengan nama .eslintrc.json.
+
+
+Di dalam berkas tersebut tertulis konfigurasi sesuai dengan jawaban pada pertanyaan-pertanyaan yang diberikan.
+
+Setelah membuat konfigurasi ESLint, selanjutnya kita gunakan ESLint untuk memeriksa kode JavaScript yang ada pada proyek. Namun sebelum itu, kita perlu menambahkan npm runner berikut di dalam berkas package.json:
+
+    "scripts": {
+      "start": "nodemon server.js",
+      "lint": "eslint ./"
+    },
+
+Jalankan perintah npm run lint pada Terminal proyek, lalu perhatikan hasilnya.
+
+
+Pada Terminal, kita dapat melihat terdapat eror dan warning (bila Anda menggunakan AirBnB code style). Seperti inilah fungsi dari ESLint, ia akan memberi tahu alasan dan letak kesalahan dalam penulisan kode. Tiap eror yang tampil, itu menandakan adanya penulisan kode yang tidak sesuai dengan style guide yang sudah kita tetapkan. Melalui ESLint ini, kita dapat mencari letak kesalahan secara akurat dan cepat.
+
+ESLint dapat diintegrasikan dengan berbagai text editor, termasuk VSCode. Untuk mengaktifkan integrasi, Anda bisa menggunakan ekstensi ESLint untuk Visual Studio Code. Bagaimana cara mengunduh dan memasangnya? Mudah saja, silakan pilih menu extensions.
+
+
+Kemudian, cari ekstensi dengan nama “ESLint”.
+
+
+Tekan tombol “install” untuk memasang ESLint. Simpel ‘kan?
+
+Sekarang, mari kita kembali ke berkas server.js, di sana Anda akan melihat tanda kuning pada kode console.
+
+
+Untuk pengguna Windows, ekstensi ESLint belum sepenuhnya diaktifkan. Anda perlu mengizinkan ekstensi ESLint berjalan melalui icon ‘Lampu’ yang muncul ketika Anda mengarahkan kursor ke kode console.
+
+
+Tekan ikon lampu tersebut, kemudian pilih opsi ESLint: Manage Library Execution.
+
+    Catatan: Jika Manage Library Execution tidak muncul pada VSCode Anda, itu berarti ESLint extensions sudah dapat digunakan. Anda bisa abaikan langkah tersebut.
+
+Pilih “Allow Everywhere” pada pop-up yang muncul. Kemudian, tutup dan buka ulang proyek menggunakan VSCode.
+
+Kini ekstensi ESLint sudah berjalan dengan normal.
+
+
+Penggunaan console dianggap sebuah warning ketika Anda menerapkan AirBnB code style. ESLint membantu menyoroti hal tersebut.
+
+Agar sinkron dengan gaya penulisan di ESLint, Anda bisa mengatur indentasi dan line spacing di VSCode sesuai dengan style guide yang digunakan pada ESLint. Pengaturan tersebut berada di bottom bar VSCode.

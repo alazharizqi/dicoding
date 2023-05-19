@@ -1,0 +1,7 @@
+Build RESTful API with Hapi
+
+Di materi sebelumnya Anda telah belajar dasar-dasar pembuatan web server, mulai dari membuat server HTTP, menangani dan menanggapi permintaan, hingga teknik routing. Anda juga sudah mencoba membuat serta mengembangkan web server menggunakan framework Hapi. Dengan bekal pengetahuan dasar yang ada, sekarang kita bisa melangkah untuk membuat web server yang lebih kompleks, dan membangun proyek dengan skenario yang lebih nyata dalam membangun sistem aplikasi.
+
+Masih ingat tentang arsitektur REST yang sudah dibahas pada modul pengenalan? Nah, pada materi kali ini kita akan membuat RESTful API mulai dari awal. Pada akhirnya, Anda diharapkan bisa membuat server dari aplikasi catatan sederhana seperti pada video ini.
+Catatan
+Jika Anda akses aplikasi pada tautan di atas, aplikasi tersebut tidak akan berfungsi karena belum ada implementasi dari sisi Back-End. Tugas kita adalah membuat aplikasi Back-End dan membuat aplikasi catatan berfungsi dengan baik.
