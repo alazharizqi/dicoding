@@ -1,0 +1,84 @@
+Rangkuman Database Management System (DBMS)
+
+DBMS atau Database Management System adalah alat (software) pengelola basis data atau lebih jelasnya DBMS merupakan perantara antara user dengan basis data program aplikasi.
+
+
+Jenis-Jenis DBMS
+
+    Hierarchical DBMS
+    Menyimpan data dengan hubungan seperti parents (orang tua) dan child (anak). Data akan tersimpan secara hierarki dan parents dapat memiliki banyak cabang child. Namun, child hanya boleh memiliki satu parents saja.
+
+    Network DBMS
+    Memiliki hubungan antar data yang lebih rumit, yaitu hubungan many to many. Jika kamu ingin mengakses data ini, ada berbagai cara untuk mendapatkannya.
+
+    Relational DBMS
+    Model ini didasarkan pada normalisasi data dalam baris dan kolom tabel yang merupakan model relasional, disimpan dalam struktur tetap dan dimanipulasi menggunakan SQL. Ini adalah sistem data diatur dan dinormalisasi dalam tabel 2D menggunakan baris dan kolom. Dalam RDBMS, setiap tabel harus memiliki kunci yang secara unik mengidentifikasi setiap record. Sistem Basis Data Relasional ideal jika Anda memerlukan sistem penyimpanan data yang dapat diskalakan dan fleksibel.
+
+    Object-oriented Model
+    Data disimpan dalam bentuk objek. Struktur yang disebut kelas yang menampilkan data di dalamnya ini adalah salah satu komponen DBMS yang mendefinisikan basis data sebagai kumpulan objek yang menyimpan nilai dan operasi anggota data.
+
+
+Fungsi-Fungsi DBMS
+
+Di bawah ini merupakan beberapa fungsi dari DBMS yang bermanfaat dalam implementasi sebuah sistem.
+
+    Menjaga Integritas Data
+    DBMS berfungsi untuk mengurangi dan menghilangkan redudansi serta memaksimalkan konsistensi sehingga setiap kali menampilkan data, sesuai dengan data aslinya.
+
+    Penyimpanan Data (Manajemen Penyimpanan Data)
+    DBMS memiliki fungsi utama sebagai tempat penyimpanan data, kecanggihannya saat ini dapat menyimpan data dalam berbagai jenis, seperti video dan gambar. Pengguna tidak perlu tahu cara data disimpan atau dimanipulasi. DBMS memiliki prosedur dalam proses ini dan memastikan data yang disimpan sesuai dengan data yang dimasukkan.
+
+    Kamus Data
+    DBMS memiliki fungsi mengelola elemen-elemen dalam basis data dan cara elemen-elemen tersebut dihubungkan dengan data lainnya. Ketika sistem membutuhkan data dalam basis data, DBMS akan memberikan kemudahan melalui SQL untuk mengakses dan mencari data tersebut. Jadi, pengguna dapat dengan mudah menangani ini.
+
+    Transformasi dan Presentasi Data
+    Peran DBMS sebagai transformasi dan penyajian data termasuk mengubah setiap data yang dimasukkan dalam struktur dan format yang telah ditentukan. Dengan demikian, DBMS dapat membedakan antara format data logis dan bentuk fisiknya.
+
+    Keamanan Data
+    DBMS memiliki peranan penting dalam tingkat keamanan dalam basis data. DBMS memiliki peran terkait memberikan hak akses kepada orang yang tepat. Selain itu, DBMS juga bertanggung jawab untuk mengelola tindakan yang dapat dilakukan pengguna pada basis data.
+
+    Mengaktifkan Akses ke Banyak Pengguna
+    DBMS memungkinkan beberapa pengguna untuk berinteraksi dalam sebuah basis data. Hal ini akan lebih efisien dan dapat menempatkan pengguna tertentu sesuai dengan peran dan fungsinya.
+
+    Menyediakan Prosedur Pencadangan dan Pemulihan
+    DBMS memungkinkan basis data untuk dicadangkan dan dipulihkan sesuai dengan kebutuhannya dengan memanfaatkan teknik dan wizard yang dimiliki oleh setiap DBMS. Hal ini akan memudahkan pihak yang berkepentingan ketika terjadi sesuatu pada basis data, seperti kerusakan dan bencana alam.
+
+    Menyediakan Akses Bahasa dan Pemrograman
+    DBMS menyediakan SQL untuk memanipulasi dan membuat skema basis data yang dikenal sebagai DML dan DDL. Dengan bahasa ini, seorang DBA dapat dengan mudah memasukkan, mengambil, menghapus, dan mengubah data dalam basis data dengan menggunakan antarmuka yang disediakan.
+
+    Menyediakan Antarmuka untuk Komunikasi
+    DBMS menyediakan interface untuk berkomunikasi antara basis data satu dengan lainnya. Selain itu juga dapat memudahkan komunikasi antara basis data dengan alat lain seperti browser.
+
+    Pengelolaan Transaksi
+    Sebuah transaksi adalah serangkaian tindakan, dilakukan oleh user atau program aplikasi yang mengakses atau mengubah isi database.
+
+
+Peran DBMS di Industri
+
+Di bawah ini merupakan beberapa contoh kasus peran DBMS di industri yang dapat Anda ketahui.
+Industri	Keterangan
+
+Sistem Rekam Medis
+	
+
+Teknologi kesehatan ini menggunakan DBMS dalam mengintegrasikan data ketika user memindai barcode, data akan secara otomatis terintegrasi dengan data yang terdapat di Kementerian Kesehatan dan menunjukkan status vaksin peserta.
+
+Platform Travel 
+	
+
+Ketika Anda memiliki tujuan untuk liburan dan membeli tiket secara online melalui platform travel lalu memilih destinasi liburan mulai dari reservasi hotel, reservasi transportasi udara dan darat, dan mengisi data pribadi merupakan bantuan dari DBMS agar data Anda tidak tertukar dengan calon wisatawan yang lain.
+
+Perusahaan Transportasi Online
+	
+
+Ketika Anda memutuskan untuk menggunakan transportasi online dan mendapatkan driver, muncul data terkait driver, seperti plat nomor, nama, dan jenis motor pada perangkat Anda; begitupun sebaliknya, data seperti nama dan nomor telepon akan muncul di perangkat driver. Nah, teknologi tersebut adalah salah satu bantuan dari adanya DBMS.
+
+Marketplace
+	
+
+Peran DBMS pada aplikasi ini adalah ketika Anda memiliki toko di marketplace, sistem akan secara otomatis membantu Anda dalam manajemen persediaan. Contoh: Barang tersedia sebanyak 12 ketika pembeli checkout maka persediaan akan otomatis berkurang satu. Hal tersebut adalah salah satu cara kerja dari DBMS.
+
+Sistem Perpustakaan Nasional Republik Indonesia (Perpusnas)
+	
+
+iPusnas merupakan aplikasi perpustakaan digital yang telah dikembangkan oleh Perpusnas. Aplikasi tersebut menggunakan DBMS dalam pengaplikasiannya karena tentunya aplikasi tersebut menyimpan banyak daftar buku serta identitas peminjam seluruh Indonesia yang jumlahnya tidak sedikit. Maka dari itu, DBMS sangat diperlukan ketika menerapkan aplikasi ini.

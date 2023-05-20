@@ -1,0 +1,441 @@
+Rangkuman Kelas
+
+
+Rangkuman Pengenalan Data dan Basis Data
+
+Menurut Kamus Besar Bahasa Indonesia, data merupakan keterangan yang benar dan nyata. 
+
+Menurut kamus Cambridge, data adalah informasi, terutama fakta atau angka, dikumpulkan untuk diperiksa dan dipertimbangkan serta digunakan untuk membantu pengambilan keputusan atau informasi dalam bentuk elektronik yang dapat disimpan dan digunakan oleh komputer.
+
+Tata Sutabri dalam buku Konsep Sistem Informasi: Data adalah kenyataan yang menggambarkan suatu kejadian serta merupakan suatu bentuk yang masih mentah dan belum dapat bercerita banyak sehingga perlu diolah lebih lanjut melalui suatu model untuk menghasilkan informasi.
+
+
+Data Kualitatif
+
+Menurut Sugiyono (2014), data kualitatif adalah data yang berbentuk kata, skema, dan gambar. Data kualitatif didapatkan dari metode penelitian yang berlandaskan filsafat.
+
+
+Data Kuantitatif
+
+Data kuantitatif merupakan data yang dinyatakan dalam bentuk angka. Data ini bisa didapatkan dari hasil pengukuran atau observasi yang memerlukan instrumen jumlah data yang banyak dan tidak terlalu detail terhadap hasil pengukuran tersebut.
+
+
+Jenis-Jenis Data
+
+Data Terstruktur
+	
+
+Data terstruktur adalah salah satu jenis data yang disusun dengan rapi dan diatur sedemikian rupa sehingga memiliki format atau bentuk yang tetap. 
+
+Data Tidak Terstruktur
+	
+
+Seperti namanya, data tidak terstruktur bahwa data ini tidak memiliki struktur yang beraturan.
+
+Data Semi Terstruktur
+	
+
+Data semi terstruktur adalah data dengan bentuk yang tidak dikenal.
+
+Data Numerik
+	
+
+Data numerik adalah data yang berwujud angka yang bisa didapat dari sebuah pengukuran. Misal, ukuran tinggi badan, berat badan, dan tekanan darah kita.
+
+Data Kategorikal
+	
+
+Data kategorikal merupakan data yang dapat dikelompokkan dan terbagi berdasarkan karakteristik atau ciri khasnya masing-masing.
+
+
+
+Tipe-Tipe Data
+
+    Integer: Integer (Int) merupakan tipe data berbentuk bilangan bulat atau numerik yang umumnya digunakan untuk menyimpan angka tanpa komponen pecahan. Tipe data ini mencakup semua bilangan bulat baik yang positif maupun negatif dengan range tertentu.
+    Character: Karakter merupakan tipe data yang dimanfaatkan untuk menyimpan satu huruf, angka, tanda baca, simbol, atau spasi kosong.
+    Boolean: Tipe data ini mewakili nilai yang benar dan salah dalam data.
+    Array: Tipe data ini digunakan untuk menyimpan sejumlah elemen dari urutan tertentu dan biasanya berasal dari tipe yang sama.
+    String: Ini merupakan tipe data yang paling umum digunakan untuk menyimpan teks. Selain itu, string juga dapat menyertakan angka dan simbol, tetapi ia akan selalu diperlakukan sebagai teks.
+    Float: Tipe data numerik yang digunakan untuk menyimpan angka yang mungkin memiliki komponen pecahan.
+
+
+Data, Dataset, Basis Data
+Dataset	Basis Data
+
+Dataset adalah kumpulan data yang diatur dalam format tertentu, seperti spreadsheet, CSV, atau basis data.
+	
+
+Basis data adalah kumpulan data yang diatur dan disimpan dengan cara yang memungkinkan akses dan pengambilan yang mudah. Ia dapat menyimpan berbagai macam tipe data, termasuk teks, nomor, gambar, dan tipe data lainnya.
+
+Dapat menjadi bagian dari data yang diambil dari basis data yang lebih besar. Bisa juga, dataset diambil dari sumber lain yang mendukung formatnya. 
+	
+
+Dapat memiliki banyak kumpulan data dan dapat digunakan untuk aplikasi yang berbeda.
+
+Contoh tools: Google Spreadsheet, Excel, Public Datasets, dll.
+	
+
+Contoh tools: BigQuery, MySQL, DB Browser SQL, dll.
+
+
+Basis Data Relasional
+
+Basis data relasional pada dasarnya adalah cara menyusun informasi dalam tabel, baris, dan kolom atau kumpulan item data dengan hubungan yang telah ditentukan sebelumnya.
+
+Istilah-istilah dalam basis data relasional sebagai berikut.
+
+    Relasi
+    Relasi atau tabel terdiri dari beberapa kolom dan beberapa baris. Relasi menggambarkan beberapa atribut atau entitas-entitas di dalamnya.
+
+    Derajat
+    Derajat merupakan jumlah atribut dalam sebuah relasi.
+
+    Tupel
+    Baris pada sebuah relasi.
+
+    Kardinalitas
+    Jumlah tupel dalam sebuah relasi. Tiap-tiap baris tentunya memiliki atribut yang sejenis.
+
+ 
+Aljabar Relasional
+
+Relational Algebra atau aljabar relasional merupakan kumpulan operasi terhadap relasi di mana setiap operasi menggunakan satu atau lebih relasi untuk menghasilkan satu relasi yang baru.
+
+Pada dasarnya, operasi Aljabar relasional terdiri dari selection, projection, cartesian, union, set-difference, dan rename.
+
+Adapun operasi lain yang merupakan turunan aljabar relasional yaitu set intersection, theta join, natural-join, outer join, dan division.
+
+
+Entity Relationship Diagram (ERD)
+
+Entity Relationship Diagram (ERD) merupakan salah satu teknik dalam merancang basis data yang terdiri dari tiga hal, di antaranya entity, atribut/properti, dan relasi.
+
+
+Rangkuman Database Management System (DBMS)
+
+DBMS atau Database Management System adalah alat (software) pengelola basis data atau lebih jelasnya DBMS merupakan perantara antara user dengan basis data program aplikasi.
+
+
+Jenis-Jenis DBMS
+
+    Hierarchical DBMS
+    Menyimpan data dengan hubungan seperti parents (orang tua) dan child (anak). Data akan tersimpan secara hierarki dan parents dapat memiliki banyak cabang child. Namun, child hanya boleh memiliki satu parents saja.
+
+    Network DBMS
+    Memiliki hubungan antar data yang lebih rumit, yaitu hubungan many to many. Jika kamu ingin mengakses data ini, ada berbagai cara untuk mendapatkannya.
+
+    Relational DBMS
+    Model ini didasarkan pada normalisasi data dalam baris dan kolom tabel yang merupakan model relasional, disimpan dalam struktur tetap dan dimanipulasi menggunakan SQL. Ini adalah sistem data diatur dan dinormalisasi dalam tabel 2D menggunakan baris dan kolom. Dalam RDBMS, setiap tabel harus memiliki kunci yang secara unik mengidentifikasi setiap record. Sistem Basis Data Relasional ideal jika Anda memerlukan sistem penyimpanan data yang dapat diskalakan dan fleksibel.
+
+    Object-oriented Model
+    Data disimpan dalam bentuk objek. Struktur yang disebut kelas yang menampilkan data di dalamnya ini adalah salah satu komponen DBMS yang mendefinisikan basis data sebagai kumpulan objek yang menyimpan nilai dan operasi anggota data.
+
+
+Fungsi-Fungsi DBMS
+
+Di bawah ini merupakan beberapa fungsi dari DBMS yang bermanfaat dalam implementasi sebuah sistem.
+
+    Menjaga Integritas Data
+    DBMS berfungsi untuk mengurangi dan menghilangkan redudansi serta memaksimalkan konsistensi sehingga setiap kali menampilkan data, sesuai dengan data aslinya.
+
+    Penyimpanan Data (Manajemen Penyimpanan Data)
+    DBMS memiliki fungsi utama sebagai tempat penyimpanan data, kecanggihannya saat ini dapat menyimpan data dalam berbagai jenis, seperti video dan gambar. Pengguna tidak perlu tahu cara data disimpan atau dimanipulasi. DBMS memiliki prosedur dalam proses ini dan memastikan data yang disimpan sesuai dengan data yang dimasukkan.
+
+    Kamus Data
+    DBMS memiliki fungsi mengelola elemen-elemen dalam basis data dan cara elemen-elemen tersebut dihubungkan dengan data lainnya. Ketika sistem membutuhkan data dalam basis data, DBMS akan memberikan kemudahan melalui SQL untuk mengakses dan mencari data tersebut. Jadi, pengguna dapat dengan mudah menangani ini.
+
+    Transformasi dan Presentasi Data
+    Peran DBMS sebagai transformasi dan penyajian data termasuk mengubah setiap data yang dimasukkan dalam struktur dan format yang telah ditentukan. Dengan demikian, DBMS dapat membedakan antara format data logis dan bentuk fisiknya.
+
+    Keamanan Data
+    DBMS memiliki peranan penting dalam tingkat keamanan dalam basis data. DBMS memiliki peran terkait memberikan hak akses kepada orang yang tepat. Selain itu, DBMS juga bertanggung jawab untuk mengelola tindakan yang dapat dilakukan pengguna pada basis data.
+
+    Mengaktifkan Akses ke Banyak Pengguna
+    DBMS memungkinkan beberapa pengguna untuk berinteraksi dalam sebuah basis data. Hal ini akan lebih efisien dan dapat menempatkan pengguna tertentu sesuai dengan peran dan fungsinya.
+
+    Menyediakan Prosedur Pencadangan dan Pemulihan
+    DBMS memungkinkan basis data untuk dicadangkan dan dipulihkan sesuai dengan kebutuhannya dengan memanfaatkan teknik dan wizard yang dimiliki oleh setiap DBMS. Hal ini akan memudahkan pihak yang berkepentingan ketika terjadi sesuatu pada basis data, seperti kerusakan dan bencana alam.
+
+    Menyediakan Akses Bahasa dan Pemrograman
+    DBMS menyediakan SQL untuk memanipulasi dan membuat skema basis data yang dikenal sebagai DML dan DDL. Dengan bahasa ini, seorang DBA dapat dengan mudah memasukkan, mengambil, menghapus, dan mengubah data dalam basis data dengan menggunakan antarmuka yang disediakan.
+
+    Menyediakan Antarmuka untuk Komunikasi
+    DBMS menyediakan interface untuk berkomunikasi antara basis data satu dengan lainnya. Selain itu juga dapat memudahkan komunikasi antara basis data dengan alat lain seperti browser.
+
+    Pengelolaan Transaksi
+    Sebuah transaksi adalah serangkaian tindakan, dilakukan oleh user atau program aplikasi yang mengakses atau mengubah isi database.
+
+
+Peran DBMS di Industri
+
+Di bawah ini merupakan beberapa contoh kasus peran DBMS di industri yang dapat Anda ketahui.
+Industri	Keterangan
+
+Sistem Rekam Medis
+	
+
+Teknologi kesehatan ini menggunakan DBMS dalam mengintegrasikan data ketika user memindai barcode, data akan secara otomatis terintegrasi dengan data yang terdapat di Kementerian Kesehatan dan menunjukkan status vaksin peserta.
+
+Platform Travel 
+	
+
+Ketika Anda memiliki tujuan untuk liburan dan membeli tiket secara online melalui platform travel lalu memilih destinasi liburan mulai dari reservasi hotel, reservasi transportasi udara dan darat, dan mengisi data pribadi merupakan bantuan dari DBMS agar data Anda tidak tertukar dengan calon wisatawan yang lain.
+
+Perusahaan Transportasi Online
+	
+
+Ketika Anda memutuskan untuk menggunakan transportasi online dan mendapatkan driver, muncul data terkait driver, seperti plat nomor, nama, dan jenis motor pada perangkat Anda; begitupun sebaliknya, data seperti nama dan nomor telepon akan muncul di perangkat driver. Nah, teknologi tersebut adalah salah satu bantuan dari adanya DBMS.
+
+Marketplace
+	
+
+Peran DBMS pada aplikasi ini adalah ketika Anda memiliki toko di marketplace, sistem akan secara otomatis membantu Anda dalam manajemen persediaan. Contoh: Barang tersedia sebanyak 12 ketika pembeli checkout maka persediaan akan otomatis berkurang satu. Hal tersebut adalah salah satu cara kerja dari DBMS.
+
+Sistem Perpustakaan Nasional Republik Indonesia (Perpusnas)
+	
+
+iPusnas merupakan aplikasi perpustakaan digital yang telah dikembangkan oleh Perpusnas. Aplikasi tersebut menggunakan DBMS dalam pengaplikasiannya karena tentunya aplikasi tersebut menyimpan banyak daftar buku serta identitas peminjam seluruh Indonesia yang jumlahnya tidak sedikit. Maka dari itu, DBMS sangat diperlukan ketika menerapkan aplikasi ini.
+
+
+Rangkuman Pengenalan Structured Query Language
+
+Berikut adalah rangkuman yang dapat Anda baca untuk mengingat kembali materi dalam modul ini.
+
+
+Data Definition Language (DDL)
+
+Dalam penggunaan SQL, ada beberapa jenis perintah yang digunakan. Perintah tersebut dibutuhkan dalam mengakses dan memanajemen data dalam basis data. Salah satunya adalah Data Definition Language (DDL).
+
+DDL merupakan sub-perintah pada SQL yang dimanfaatkan guna membangun kerangka basis data.
+
+Berikut adalah pernyataan (statements) yang utama dari DDL, di antaranya CREATE TABLE, DROP TABLE, dan VIEW.
+Statement	Query
+
+CREATE TABLE
+	
+
+CREATE TABLE nama_tabel
+
+(
+
+nama_kolom1,
+
+nama_kolom2,
+
+);
+
+DROP TABLE
+	
+
+DROP TABLE (nama_tabel):
+
+VIEW
+	
+
+CREATE VIEW (nama kolom yang akan Anda perlihatkan) AS
+
+SELECT nama_kolom1, nama_kolom 2
+
+FROM nama_tabel
+
+WHERE nama_kolom;
+
+
+Data Manipulation Language (DML)
+
+Jenis perintah SQL yang lain adalah Data Manipulation Language (DML). DML merupakan sub-perintah pada SQL yang dimanfaatkan dalam manipulasi basis data yang sudah dibuat. Pada dasarnya, dalam DML terdapat empat perintah, yaitu SELECT, INSERT, DELETE, dan UPDATE.
+Statements	Query
+
+SELECT
+	
+
+SELECT * FROM
+
+INSERT
+	
+
+INSERT INTO
+
+DELETE
+	
+
+DELETE FROM
+
+UPDATE
+	
+
+UPDATE nama_tabel 
+
+SET nama_kolom = newvalue;
+
+
+Constraints
+
+Constraint adalah batasan yang ditempatkan dalam satu atau lebih kolom tabel. Ada beberapa jenis constraint, di antaranya primary key, foreign key, unique, dan check. Pada kelas Belajar Dasar Structured Query Language (SQL) ini, Anda hanya akan mempelajari primary key constraint dan unique constraint. 
+Statements	Query
+
+NOT NULL
+	
+
+Tidak terdapat nilai.
+
+Contoh: 
+
+    Kosong = NULL (tidak bernilai)
+
+    0 = NOT NULL (bernilai)
+
+UNIQUE
+	
+
+Nilai berbeda satu sama lain (Tidak terdapat duplikat).
+
+Contoh: 1A, 2B, 3C
+
+PRIMARY KEY
+	
+
+Nilai unik yang dijadikan sebuah referensi serta tidak boleh sama dengan yang lain.
+
+Contoh: Nomor Induk Kewarganegaraan, email, dll.
+
+INDEX
+	
+
+CREATE INDEX nama_index
+
+ON nama_tabel (nama_kolom);
+
+
+Pengenalan Diagram
+Jenis Tabel	Definisi
+
+Entity
+	
+
+Tabel tunggal.
+
+Entity Relational Diagram (ERD)
+	
+
+Tabel yang terdiri dari tabel-tabel tunggal yang saling terhubung satu sama lain.
+
+
+Rangkuman Basic Query
+
+Berikut adalah rangkuman dari modul ini yang dapat Anda baca untuk mengingat kembali materi secara ringkas.
+Statement	Query	Deskripsi
+
+INSERT
+	
+
+INSERT INTO nama_tabel (nama_kolom1, nama_kolom2,...)
+
+VALUES (‘values1’,’values2’,...)
+	
+
+Menambahkan data pada tabel yang telah dibuat sebelumnya.
+
+SELECT & FROM
+	
+
+SELECT */column(s)
+
+FROM nama_tabel;
+	
+
+Untuk memilih seluruh data (*) atau sebagian data (column[s]) dari tabel yang telah dibuat.
+
+WHERE
+	
+
+WHERE nama_kolom = ‘value’/value;
+	
+
+Untuk membuat spesifikasi data yang akan ditampilkan dengan kondisi tertentu.
+
+ALIAS
+	
+
+SELECT nama_kolom AS nama_alias
+
+FROM nama_tabel;
+
+SELECT nama_kolom
+
+FROM nama_tabel AS nama_alias;
+	
+
+Mengubah nama kolom atau tabel secara sementara pada tampilan konsol.
+
+UPDATE
+	
+
+UPDATE nama_tabel
+
+SET nama_kolom = newvalue
+
+WHERE nama_kolom = somevalue;
+	
+
+Untuk mengubah nilai (value) pada sebuah baris yang telah dibuat sebelumnya.
+
+ORDER BY
+	
+
+SELECT *
+
+FROM nama_tabel
+
+ORDER BY nama_kolom ASC;
+
+SELECT *
+
+FROM nama_tabel
+
+ORDER BY nama_kolom DESC;
+	
+
+ASC = Mengurutkan dari nilai terkecil menuju besar.
+
+DESC = Mengurutkan dari nilai terbesar menuju kecil.
+
+Berfungsi untuk mengurutkan nilai/huruf.
+
+LIMIT
+	
+
+SELECT *
+
+FROM nama_tabel
+
+LIMIT jumlah_data_yang_dikembalikan;
+	
+
+Untuk membatasi jumlah baris yang akan ditampilkan pada sebuah tabel.
+
+OFFSET
+	
+
+SELECT *
+
+FROM nama_tabel
+
+LIMIT jumlah_data_yang_dikembalikan
+
+OFFSET jumlah_baris_yang_dikembalikan;
+	
+
+Untuk menentukan halaman dari record yang ditampilkan.
+
+DELETE
+	
+
+DELETE
+
+FROM nama_tabel
+
+WHERE nama_kolom = ‘value’;
+	
+
+Menghapus satu hingga beberapa baris yang terdapat pada tabel.

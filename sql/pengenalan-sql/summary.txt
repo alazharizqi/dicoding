@@ -1,0 +1,122 @@
+Rangkuman Pengenalan Structured Query Language
+
+Berikut adalah rangkuman yang dapat Anda baca untuk mengingat kembali materi dalam modul ini.
+
+
+Data Definition Language (DDL)
+
+Dalam penggunaan SQL, ada beberapa jenis perintah yang digunakan. Perintah tersebut dibutuhkan dalam mengakses dan memanajemen data dalam basis data. Salah satunya adalah Data Definition Language (DDL).
+
+DDL merupakan sub-perintah pada SQL yang dimanfaatkan guna membangun kerangka basis data.
+
+Berikut adalah pernyataan (statements) yang utama dari DDL, di antaranya CREATE TABLE, DROP TABLE, dan VIEW.
+Statement	Query
+
+CREATE TABLE
+	
+
+CREATE TABLE nama_tabel
+
+(
+
+nama_kolom1,
+
+nama_kolom2,
+
+);
+
+DROP TABLE
+	
+
+DROP TABLE (nama_tabel):
+
+VIEW
+	
+
+CREATE VIEW (nama kolom yang akan Anda perlihatkan) AS
+
+SELECT nama_kolom1, nama_kolom 2
+
+FROM nama_tabel
+
+WHERE nama_kolom;
+
+
+Data Manipulation Language (DML)
+
+Jenis perintah SQL yang lain adalah Data Manipulation Language (DML). DML merupakan sub-perintah pada SQL yang dimanfaatkan dalam manipulasi basis data yang sudah dibuat. Pada dasarnya, dalam DML terdapat empat perintah, yaitu SELECT, INSERT, DELETE, dan UPDATE.
+Statements	Query
+
+SELECT
+	
+
+SELECT * FROM
+
+INSERT
+	
+
+INSERT INTO
+
+DELETE
+	
+
+DELETE FROM
+
+UPDATE
+	
+
+UPDATE nama_tabel 
+
+SET nama_kolom = newvalue;
+
+
+Constraints
+
+Constraint adalah batasan yang ditempatkan dalam satu atau lebih kolom tabel. Ada beberapa jenis constraint, di antaranya primary key, foreign key, unique, dan check. Pada kelas Belajar Dasar Structured Query Language (SQL) ini, Anda hanya akan mempelajari primary key constraint dan unique constraint. 
+Statements	Query
+
+NOT NULL
+	
+
+Tidak terdapat nilai.
+
+Contoh: 
+
+    Kosong = NULL (tidak bernilai)
+
+    0 = NOT NULL (bernilai)
+
+UNIQUE
+	
+
+Nilai berbeda satu sama lain (Tidak terdapat duplikat).
+
+Contoh: 1A, 2B, 3C
+
+PRIMARY KEY
+	
+
+Nilai unik yang dijadikan sebuah referensi serta tidak boleh sama dengan yang lain.
+
+Contoh: Nomor Induk Kewarganegaraan, email, dll.
+
+INDEX
+	
+
+CREATE INDEX nama_index
+
+ON nama_tabel (nama_kolom);
+
+
+Pengenalan Diagram
+Jenis Tabel	Definisi
+
+Entity
+	
+
+Tabel tunggal.
+
+Entity Relational Diagram (ERD)
+	
+
+Tabel yang terdiri dari tabel-tabel tunggal yang saling terhubung satu sama lain.

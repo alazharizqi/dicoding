@@ -1,0 +1,125 @@
+Data Definition Language
+
+Data Definition Language (DDL) merupakan sub-perintah pada SQL yang dimanfaatkan guna membangun kerangka basis data. Nah, pada modul ini, Anda akan mengenali, mengidentifikasi penggunaan query, serta latihan untuk meningkatkan kemampuan dalam SQL. Penasaran? Yuk, simak penjelasannya.
+
+
+Pengantar Data Definition Language (DDL)
+
+Dalam materi sebelumnya, Anda telah mengenal definisi Data Definition Language (DDL) serta statement yang termasuk ke dalamnya.
+
+Pada bagian ini, Anda akan mempelajari lebih lanjut terkait CREATE TABLE, DROP TABLE, dan VIEW.
+
+Yuk, kita simak penjelasannya di bawah ini.
+
+
+CREATE TABLE
+
+Mengenal Tabel
+
+Sebelum mempelajari terkait detail tabel, baris, dan kolom, mari kita kilas balik terkait basis data terlebih dahulu.
+
+Dalam Modul Pengenalan Data dan Basis Data, dijelaskan bahwa basis data terdiri dari tabel-tabel yang saling berelasi dan terdiri dari kategori-kategori yang telah dibuat. Agar Anda lebih paham terkait cara memilah kategori, sebelum lanjut ke materi berikutnya, di bawah ini terdapat lampiran yang berisi latihan dan jawaban untuk Anda memperdalam pemahaman terkait cara memilah kategori hingga menjadi sebuah tabel. Jangan buka jawaban sebelum mengerjakan latihannya, ya! Hihi.
+
+Latihan CREATE TABLE
+
+Hebat sekali! Pertahankan, ya!
+
+Setelah latihan memilah kategori, langkah berikutnya adalah beri nama tabel untuk memudahkan ketika Anda mencarinya. Perhatikan contoh berikut agar Anda lebih paham.
+
+
+Bagaimana sekarang? Apakah sampai sini Anda memahami cara membuat tabel? 
+
+Mari kita beranjak ke materi inti, yaitu CREATE TABLE. Kita analogikan bahwa Anda merupakan seorang kondektur yang telah diberi jadwal oleh perusahaan dan harus bekerja lintas kota dengan jadwal yang tertera pada tabel di bawah ini. Katakanlah Anda kesulitan mengingat jadwal tersebut sehingga Anda membuat tabel agar tidak melewatkan tugas.
+
+Implementasi Tabel
+
+Setelah mempelajari CREATE TABLE pada materi sebelumnya, dalam materi ini Anda akan mengeksplorasi implementasi dari tabel yang sangat beragam. Penasaran? Yuk, simak materinya di bawah ini.
+
+Tipe Data yang Didukung oleh Tabel
+
+Sebelumnya Anda telah mempelajari cara membuat tabel dengan tipe-tipe data pada SQL yang telah disampaikan juga pada pada Modul 1. Namun, apakah Anda tahu? Ada dua jenis tipe data yang harus Anda ketahui, yaitu NULL dan NOT NULL. Apakah itu?
+
+NULL adalah sebuah tipe data spesial yang menunjukkan sebuah variabel belum memiliki nilai atau data dan NOT NULL adalah kebalikannya. Pada materi ini, Anda akan mengenal lebih dalam mengenai NOT NULL yang memiliki fungsi untuk memastikan bahwa nilai pada kolom tersebut tidak boleh kosong.
+
+Membuat Tabel dengan SQL
+
+Setelah Anda mengenal dan mempelajari CREATE TABLE, saatnya Anda menguji pemahaman terkait materi yang telah dipelajari. Sebagaimana yang telah disebutkan pada modul sebelumnya, kita akan menggunakan DB Browser SQLite untuk latihan di kelas ini.
+
+Pastikan untuk melakukan langkah-langkah ini secara urut seperti yang telah diinstruksikan. 
+
+
+Studi Kasus
+
+Anda merupakan seorang kondektur bus yang akan melakukan perjalanan Jakarta–Bali dan memerlukan data penumpang agar perjalanan lancar sesuai jadwal. Anda telah memiliki data-data dari penumpang bus tersebut seperti yang tertera di bawah ini.
+
+tabel_penumpang
+
+Latihan Membuat Tabel dengan SQL
+
+Atas perintah sopir, Anda langsung mengeksekusi perintah dan menuliskan query tersebut di DB Browser SQL seperti yang tertera pada gambar di bawah.
+
+    Langkah pertama adalah buka terlebih dahulu DB Browser SQLite
+
+Klik Newdatabase, simpan file Anda di lokasi yang aman dan beri nama sesuai kebutuhan Anda. Contoh: Latihan 1, klik Save. 
+Setelah tersimpan, tampilan SQLite Anda akan seperti berikut.
+    Isi kolom tabel yang tertera seperti pada contoh atau Anda dapat mengubahnya sesuai keinginan. Lalu, isi Fields, tekan Add dan isi kolom-kolom tersebut sesuai dengan kategori tipe data yang telah dijelaskan di atas, atau Anda dapat perhatikan gambar tersebut. Lalu, tekan OK.
+
+    Layar Anda akan menampilkan seperti pada video berikut.
+
+Catatan:
+
+    Apabila tabel tidak seperti yang tertera pada video, Anda bisa periksa terlebih dahulu pada sebelah kiri SQLite tersebut bagian Table, sudah berupa tabel_penumpang atau belum.
+    Klik ikon untuk menambahkan tabel: Insert a new record.
+    Klik Write Change untuk menyimpan basis data (database) yang Anda buat.
+    Lanjut ke kolom Execute SQL untuk membuktikan tabel Anda sudah berhasil dibuat atau belum.
+    Perlu Anda ketahui bahwa saat CREATE TABLE tabel tersebut akan tersimpan dengan sendirinya. Namun, apabila ingin membuktikan bahwa tabel tersebut sudah tersimpan atau belum, Anda dapat menggunakan SELECT * FROM (nama_tabel) yang akan dibahas pada materi berikutnya.
+
+
+DROP TABLE
+
+Mengenal DROP TABLE
+
+Seiring waktu, tabel pada basis data akan berubah sesuai kebutuhannya, baik bertambah maupun berkurang. Apabila untuk menambahkan tabel Anda telah mempelajari pada materi sebelumnya, yaitu CREATE TABLE; nah, berkebalikan dengan menambahkan (CREATE TABLE), DROP TABLE berfungsi untuk menghapus tabel dari basis data.
+
+Catatan:
+
+    Apabila tabel tidak seperti yang tertera pada video, Anda bisa periksa terlebih dahulu pada sebelah kiri SQLite tersebut bagian Table, sudah berupa tabel_penumpang atau belum.
+    Klik ikon untuk menambahkan tabel: Insert a new record.
+    Klik Write Change untuk menyimpan basis data (database) yang Anda buat.
+    Lanjut ke kolom Execute SQL untuk membuktikan tabel Anda sudah berhasil dibuat atau belum.
+    Perlu Anda ketahui bahwa saat CREATE TABLE tabel tersebut akan tersimpan dengan sendirinya. Namun, apabila ingin membuktikan bahwa tabel tersebut sudah tersimpan atau belum, Anda dapat menggunakan SELECT * FROM (nama_tabel) yang akan dibahas pada materi berikutnya.
+
+DROP TABLE nama_tabel;
+
+
+VIEW
+
+Masih dalam pembahasan tabel, setelah sebelumnya Anda mempelajari CREATE TABLE dan DROP TABLE, pada materi ini Anda akan dikenalkan dengan sebuah tabel virtual yang disebut VIEW. Penasaran? Yuk, kita simak penjelasannya di bawah ini.
+
+
+Mengenal VIEW
+
+VIEW atau tabel virtual adalah tabel yang hanya ada saat Anda menggunakan view dalam kueri. Tujuan dibuatnya VIEW adalah untuk mempermudah penulisan query dan juga alasan keamanan karena dapat menyembunyikan beberapa kolom yang bersifat rahasia, atau dalam beberapa kasus digunakan untuk mempercepat proses menampilkan data. Ini juga dianggap sebagai tabel virtual karena berfungsi seperti tabel dan operasi yang sama.
+
+
+Penggunaan VIEW ibarat Anda dapat melihat sebuah objek dengan hanya menggunakan x-ray, misalnya organ dalam anggota tubuh. Organ-organ tersebut hanya akan terlihat apabila menggunakan x-ray. Nah, fungsi dari VIEW juga untuk melihat sesuatu yang tidak bisa terlihat secara langsung.
+
+Mengapa Menggunakan VIEW?
+
+    Anda dapat menyimpan perubahan pada struktur basis data agar tidak mengganggu aplikasi yang bergantung pada tabel Anda.
+    Sederhananya, Anda akan membuat tampilan data serta dapat mengubah struktur tabel yang mendasarinya. Nah, tetapi Anda sebelumnya membuat tampilan yang meniru struktur tabel terlebih dahulu sehingga tidak perlu mengubah aplikasi menggunakan data.
+
+    VIEW membuat pekerjaan Anda lebih mudah dengan menyederhanakan query kompleks menjadi perintah sederhana.
+    Anda tidak perlu membuat gabungan dan subquery yang rumit berulang kali saat membuat VIEW. Misalnya ketika Anda menghubungkan SQL ke PHP atau bahasa pemrograman lain, VIEW akan menyembunyikan query yang rumit, lalu menyederhanakannya. Sungguh menarik, bukan?
+
+    Anda dapat menyembunyikan informasi yang tidak diperlukan oleh pengguna.
+    Akan ada kondisi ketika Anda membuat tabel yang berisi informasi-informasi yang rahasia, tetapi aplikasi tersebut tetap dapat diakses oleh pengguna. Solusinya adalah menggunakan VIEW. Anda dapat mengizinkan pengguna hanya mengakses informasi yang mereka butuhkan, sambil tetap menyembunyikan informasi sensitif.
+
+
+Contoh VIEW pada Tabel
+
+Di bawah ini merupakan cara membuat tabel menggunakan VIEW. Yuk! Simak penjelasannya di bawah ini.
+
+Saat Anda menggunakan VIEW dalam query, VIEW akan berperilaku seolah-olah itu adalah subquery. Umumnya dalam memperlihatkan data yang ingin kita tampilkan adalah menggunakan SELECT dan FROM (materi akan dibahas pada materi berikutnya) sebagai berikut.
+
+

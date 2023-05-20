@@ -181,3 +181,24 @@ Contoh: Dilakukan operasi dos:cb856ecb4599fa5ad9e65fa274769a2520230503161622.jpe
 Dalam bentuk kalimat sehari-hari: “Pilih dari tabel sirkulasi, tampilkan hanya informasi NO ID, NAMA, dan TOTAL HARGA”
 
 
+Entity Relationship Diagram (ERD)
+
+Entity Relationship Diagram (ERD) merupakan salah satu teknik dalam merancang basis data. Dalam mempelajari ERD ada tiga hal yang perlu diketahui, yang pertama yaitu entity. Entity adalah terkait suatu objek/kejadian yang akan dicatat dan disimpan. Misalnya, dalam contoh yang termasuk dalam entity di antaranya penumpang, destinasi, masinis. Satu entity merepresentasikan satu objek, yang berarti satu penumpang. Lalu, kumpulan dari nama penumpang disebut entity set atau kumpulan objek-objek yang serupa.
+
+Kedua, yaitu atribut atau properti, hal-hal yang mencirikan suatu objek. Contoh, apabila objeknya penumpang, atributnya bisa berupa nama, jenis kelamin, nomor induk keluarga.
+
+Terakhir adalah relasi, yaitu hubungan antara entity dengan entity atau objek dengan objek, contohnya satu penumpang hubungannya dengan satu masinis, ia disebut relationship set. 
+
+Perlu digarisbawahi bahwa relasi di sini berbeda dengan relasi yang terdapat pada basis data. Agar lebih jelas, simak penjelasannya pada gambar di bawah ini agar Anda lebih paham dengan konsep ERD.
+
+
+Setiap entity dilambangkan dengan bentuk persegi panjang. Pada diagram tersebut, entity satu adalah penumpang yang terdiri dari beberapa atribut yang dilambangkan oleh bentuk oval, yaitu nama, jenis kelamin, dan nomor induk keluarga. 
+
+Pada lambang kedua merupakan entity kedua yang merepresentasikan destinasi dengan atribut kode booking, keberangkatan, dan tujuan. Entity satu dan entity dua dihubungkan oleh relasi atau relationship yang digambarkan dengan bentuk belah ketupat. Bentuk belah ketupat adalah representasi dari relasi atau relationship antar kedua diagram tersebut. 
+
+Satu hal yang perlu ditekankan pada bagian relasi tersebut adalah “Apakah hubungan antara kedua diagram?” Jawabannya dapat Anda tulis pada diagram tersebut.
+
+Nah, setelah menentukan hubungan antar diagram tersebut, hal lain yang harus diperhatikan adalah Anda perlu menentukan primary key dan foreign key yang akan dibahas pada modul berikutnya.
+
+Bagaimana? Apakah sampai sini sudah paham? Apabila Anda masih belum paham, Anda bisa bertanya di Forum Diskusi, ya. See you there!
+

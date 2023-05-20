@@ -1,0 +1,110 @@
+
+Rangkuman Pengenalan Data dan Basis Data
+
+Menurut Kamus Besar Bahasa Indonesia, data merupakan keterangan yang benar dan nyata. 
+
+Menurut kamus Cambridge, data adalah informasi, terutama fakta atau angka, dikumpulkan untuk diperiksa dan dipertimbangkan serta digunakan untuk membantu pengambilan keputusan atau informasi dalam bentuk elektronik yang dapat disimpan dan digunakan oleh komputer.
+
+Tata Sutabri dalam buku Konsep Sistem Informasi: Data adalah kenyataan yang menggambarkan suatu kejadian serta merupakan suatu bentuk yang masih mentah dan belum dapat bercerita banyak sehingga perlu diolah lebih lanjut melalui suatu model untuk menghasilkan informasi.
+
+
+Data Kualitatif
+
+Menurut Sugiyono (2014), data kualitatif adalah data yang berbentuk kata, skema, dan gambar. Data kualitatif didapatkan dari metode penelitian yang berlandaskan filsafat.
+
+
+Data Kuantitatif
+
+Data kuantitatif merupakan data yang dinyatakan dalam bentuk angka. Data ini bisa didapatkan dari hasil pengukuran atau observasi yang memerlukan instrumen jumlah data yang banyak dan tidak terlalu detail terhadap hasil pengukuran tersebut.
+
+
+Jenis-Jenis Data
+
+Data Terstruktur
+	
+
+Data terstruktur adalah salah satu jenis data yang disusun dengan rapi dan diatur sedemikian rupa sehingga memiliki format atau bentuk yang tetap. 
+
+Data Tidak Terstruktur
+	
+
+Seperti namanya, data tidak terstruktur bahwa data ini tidak memiliki struktur yang beraturan.
+
+Data Semi Terstruktur
+	
+
+Data semi terstruktur adalah data dengan bentuk yang tidak dikenal.
+
+Data Numerik
+	
+
+Data numerik adalah data yang berwujud angka yang bisa didapat dari sebuah pengukuran. Misal, ukuran tinggi badan, berat badan, dan tekanan darah kita.
+
+Data Kategorikal
+	
+
+Data kategorikal merupakan data yang dapat dikelompokkan dan terbagi berdasarkan karakteristik atau ciri khasnya masing-masing.
+
+
+
+Tipe-Tipe Data
+
+    Integer: Integer (Int) merupakan tipe data berbentuk bilangan bulat atau numerik yang umumnya digunakan untuk menyimpan angka tanpa komponen pecahan. Tipe data ini mencakup semua bilangan bulat baik yang positif maupun negatif dengan range tertentu.
+    Character: Karakter merupakan tipe data yang dimanfaatkan untuk menyimpan satu huruf, angka, tanda baca, simbol, atau spasi kosong.
+    Boolean: Tipe data ini mewakili nilai yang benar dan salah dalam data.
+    Array: Tipe data ini digunakan untuk menyimpan sejumlah elemen dari urutan tertentu dan biasanya berasal dari tipe yang sama.
+    String: Ini merupakan tipe data yang paling umum digunakan untuk menyimpan teks. Selain itu, string juga dapat menyertakan angka dan simbol, tetapi ia akan selalu diperlakukan sebagai teks.
+    Float: Tipe data numerik yang digunakan untuk menyimpan angka yang mungkin memiliki komponen pecahan.
+
+
+Data, Dataset, Basis Data
+Dataset	Basis Data
+
+Dataset adalah kumpulan data yang diatur dalam format tertentu, seperti spreadsheet, CSV, atau basis data.
+	
+
+Basis data adalah kumpulan data yang diatur dan disimpan dengan cara yang memungkinkan akses dan pengambilan yang mudah. Ia dapat menyimpan berbagai macam tipe data, termasuk teks, nomor, gambar, dan tipe data lainnya.
+
+Dapat menjadi bagian dari data yang diambil dari basis data yang lebih besar. Bisa juga, dataset diambil dari sumber lain yang mendukung formatnya. 
+	
+
+Dapat memiliki banyak kumpulan data dan dapat digunakan untuk aplikasi yang berbeda.
+
+Contoh tools: Google Spreadsheet, Excel, Public Datasets, dll.
+	
+
+Contoh tools: BigQuery, MySQL, DB Browser SQL, dll.
+
+
+Basis Data Relasional
+
+Basis data relasional pada dasarnya adalah cara menyusun informasi dalam tabel, baris, dan kolom atau kumpulan item data dengan hubungan yang telah ditentukan sebelumnya.
+
+Istilah-istilah dalam basis data relasional sebagai berikut.
+
+    Relasi
+    Relasi atau tabel terdiri dari beberapa kolom dan beberapa baris. Relasi menggambarkan beberapa atribut atau entitas-entitas di dalamnya.
+
+    Derajat
+    Derajat merupakan jumlah atribut dalam sebuah relasi.
+
+    Tupel
+    Baris pada sebuah relasi.
+
+    Kardinalitas
+    Jumlah tupel dalam sebuah relasi. Tiap-tiap baris tentunya memiliki atribut yang sejenis.
+
+ 
+Aljabar Relasional
+
+Relational Algebra atau aljabar relasional merupakan kumpulan operasi terhadap relasi di mana setiap operasi menggunakan satu atau lebih relasi untuk menghasilkan satu relasi yang baru.
+
+Pada dasarnya, operasi Aljabar relasional terdiri dari selection, projection, cartesian, union, set-difference, dan rename.
+
+Adapun operasi lain yang merupakan turunan aljabar relasional yaitu set intersection, theta join, natural-join, outer join, dan division.
+
+
+Entity Relationship Diagram (ERD)
+
+Entity Relationship Diagram (ERD) merupakan salah satu teknik dalam merancang basis data yang terdiri dari tiga hal, di antaranya entity, atribut/properti, dan relasi.
+

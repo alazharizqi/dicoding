@@ -1,0 +1,115 @@
+AND, OR, NOT
+
+Nah, setelah Anda mempelajari numeric dan non-numeric, Anda akan kami kenalkan dengan operator AND, OR, dan NOT. Bagaimana sajakah operator yang bekerja untuk ketiga pertanyaan tersebut? Yuk, simak penjelasannya.
+
+Sebelum Anda melaksanakan ketiga operator tersebut, mari kita pisahkan satu per satu antara AND, OR, dan NOT.
+
+Anda bisa menggunakan AND atau OR untuk memadukan dua buah pernyataan yang mirip seperti logika matematis yang pernah kita pelajari saat SMA dulu. Anda masih ingat bukan? Nah, sedangkan NOT merupakan operator yang digunakan untuk menghasilkan negasi dari suatu pernyataan.
+
+
+Simak contoh di bawah ini yang dapat Anda gunakan untuk melatih kemampuan dalam menjalankan WHERE dengan operator AND, OR, dan NOT.
+
+    WHERE - AND
+    Gambar berikut menunjukkan cara untuk meng-query data yang memiliki nilai year=1964 dan prefecture=“Shizouka”. Untuk menggabungkan kedua pernyataan tersebut, kita perlu menggunakan operator AND. Ia hanya akan menampilkan data yang memenuhi kedua kondisi tersebut.
+
+    Catatan: Untuk operator AND, kolom yang digunakan tidak boleh sama, contohnya WHERE year = … AND year = …
+
+    Jika dilakukan, konsol tidak akan menampilkan hasil apa pun.
+
+WHERE - OR
+Gambar di bawah ini menampilkan data yang memiliki nilai prefecture=“Tokyo” atau prefecture=“Aichi”. Pada kasus ini, kita bisa menggunakan operator OR. Ia akan menampilkan data yang memenuhi salah satu kondisi tersebut. Berbeda dengan sebelumnya, yakni operator AND, operator OR dapat menggunakan nama kolom yang sama pada konsol. Contohnya tertera pada gambar berikut.
+
+WHERE-NOT
+Terakhir, katakanlah Anda ingin menampilkan seluruh data selain data yang memiliki nilai year=1964. Untuk melakukan hal ini, Anda bisa menggunakan operator NOT seperti pada gambar di bawah ini.
+
+
+
+
+LIKE 
+
+Pada modul sebelumnya, Anda telah mengetahui dan mempraktikkan operator AND, OR, dan NOT. Sama halnya dengan LIKE, ia memiliki operator dalam mencari pola dan kolom yang diperlukan.
+
+Operator LIKE digunakan dalam pernyataan WHERE untuk mencari pola yang ditentukan pada kolom.
+
+Ada dua pola yang sering digunakan bersama operator LIKE.
+
+    Tanda persen (%) mewakili nol, satu, atau beberapa karakter.
+    Tanda garis bawah ( _ ) mewakili satu karakter tunggal.
+
+Sebelum Anda latihan langsung di SQL, berikut adalah pola yang dapat digunakan bersamaan dengan LIKE.
+
+
+WHERE (nama kolom) LIKE ‘a%’
+Mencari nilai apa pun pada field kolom yang dimulai huruf “a” atau Anda bisa menggunakan huruf lainnya.
+
+WHERE (nama kolom) LIKE ‘%a’
+Mencari nilai apa pun pada field kolom nama yang diakhiri huruf “a” atau Anda bisa menggunakan huruf lainnya.
+
+WHERE (nama kolom) LIKE ‘%or%’
+Mencari nilai apa pun pada field kolom yang di dalamnya terdapat huruf “or”. Anda juga bisa menggunakan huruf lainnya.
+
+WHERE (nama kolom) LIKE ‘_r%’
+Mencari nilai apa pun pada field kolom yang karakter keduanya huruf “r” atau Anda bisa menggunakan karakter lainnya.
+
+WHERE (nama kolom) LIKE ‘a_%’
+Mencari nilai apa pun pada field kolom yang dimulai dengan huruf “a” dan panjangnya minimal dua karakter atau Anda bisa menggunakan karakter lainnya.
+
+WHERE (nama kolom) LIKE ‘a__%’
+Mencari nilai apa pun pada field kolom yang dimulai dengan huruf “a” dan panjangnya minimal tiga karakter atau Anda bisa menggunakan karakter lainnya.
+
+WHERE (nama kolom) LIKE ‘a%o’
+Mencari nilai apa pun pada field kolom yang dimulai huruf “a” dan diakhiri huruf “o” atau Anda bisa menggunakan karakter lainnya.
+
+
+
+
+ALIAS
+
+Tahukah kamu? Pada SQL dapat mengubah sementara baik nama tabel maupun nama kolom. Hal tersebut terjadi apabila Anda menggunakan pernyataan ALIAS (AS). Penasaran? Yuk, kita simak penjelasannya.
+
+ALIAS pada SQL digunakan untuk memberi nama lain yang bersifat sementara pada tabel atau kolom dalam tabel. Maksud dari sementara adalah pernyataan ALIAS hanya berlaku pada proses query tersebut. ALIAS sering digunakan untuk membuat nama kolom lebih mudah dibaca. 
+
+SELECT * FROM nama_tabel AS nama_alias;
+
+Pada tabel shinkansen_station terdapat kolom bernama prefecture yang berarti wilayah. Sebab dirasa pelafalan prefecture cukup sulit, kita akan ubah namanya menggunakan ALIAS menjadi wilayah agar lebih mudah diingat dalam latihan.
+
+Catatan: Penggunaan ALIAS tidak akan mengubah basis data yang asli, operator tersebut hanya akan mengubah tampilan agar Anda mudah dalam mengingat atau menggunakan setiap kolom.
+
+
+
+UPDATE
+
+Salah satu fungsi dan tujuan pernyataan UPDATE adalah untuk mengubah nilai lama menjadi sebuah nilai baru pada sebuah basis data SQL. UPDATE disandingkan dengan pernyataan WHERE untuk mengetahui nilai yang akan diubah. Bagaimanakah cara kerjanya? Yuk, simak penjelasannya. 
+
+Sebelumnya, Anda telah mempelajari UPDATE dalam Modul 3 Pengenalan Structured Query Language (SQL). Berikut adalah rumus untuk menulis query UPDATE.
+
+Gambar di atas merupakan tabel sebelum terjadi UPDATE terkait data yang terdapat dalam basis data. Lalu, bagaimanakah jadinya apabila terjadi UPDATE pada data tersebut?
+
+Contohnya, seperti yang terlihat pada baris satu kolom distance_from_tokyo terdapat nilai 0. Apabila nilai tersebut ingin diperbarui dan memiliki nilai 29.05, hasilnya akan seperti berikut.
+
+
+
+
+ORDER BY
+
+Setiap user tentunya memiliki tujuan yang berbeda-beda dalam mengeksekusi data menggunakan SQL. Salah satunya adalah seorang user perlu mengurutkan sebuah data baik dari urutan kecil ke besar ataupun sebaliknya. ORDER BY akan membantu user dalam proses pengurutan data. Bagaimanakah cara kerjanya? Yuk, simak penjelasannya.
+
+ORDER BY digunakan sebagai operator untuk menyusun data berurutan dari kecil ke besar atau besar ke kecil, atau biasanya disebut ascending (ASC) dan descending (DESC). Contohnya:
+
+A - Z = Ascending
+
+Z - A = Descending
+
+
+
+LIMIT
+batesin baris
+SELECT * FROM nama_tabel LIMIT 5;
+baris yang tampil cuma 5 baris (kalo data lebih sama dengan 5 baris)
+
+OFFSET
+nge-skip baris
+
+DELETE
+hapus baris dengan spesifik value
+DELETE FROM nama_tabel WHERE id=1;

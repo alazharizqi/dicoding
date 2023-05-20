@@ -1,0 +1,60 @@
+Rangkuman Basic Query
+
+Berikut adalah rangkuman dari modul ini yang dapat Anda baca untuk mengingat kembali materi secara ringkas.
+
+INSERT
+INSERT INTO nama_tabel (nama_kolom1, nama_kolom2,...)
+VALUES (‘values1’,’values2’,...)
+Menambahkan data pada tabel yang telah dibuat sebelumnya.
+
+SELECT & FROM
+SELECT */column(s)
+FROM nama_tabel;
+Untuk memilih seluruh data (*) atau sebagian data (column[s]) dari tabel yang telah dibuat.
+
+WHERE
+WHERE nama_kolom = ‘value’/value;
+Untuk membuat spesifikasi data yang akan ditampilkan dengan kondisi tertentu.
+
+ALIAS
+SELECT nama_kolom AS nama_alias
+FROM nama_tabel;
+SELECT nama_kolom
+FROM nama_tabel AS nama_alias;
+Mengubah nama kolom atau tabel secara sementara pada tampilan konsol.
+
+UPDATE
+UPDATE nama_tabel
+SET nama_kolom = newvalue
+WHERE nama_kolom = somevalue;
+Untuk mengubah nilai (value) pada sebuah baris yang telah dibuat sebelumnya.
+
+ORDER BY
+SELECT *
+FROM nama_tabel
+ORDER BY nama_kolom ASC;
+SELECT *
+FROM nama_tabel
+ORDER BY nama_kolom DESC;
+ASC = Mengurutkan dari nilai terkecil menuju besar.
+DESC = Mengurutkan dari nilai terbesar menuju kecil.
+Berfungsi untuk mengurutkan nilai/huruf.
+
+LIMIT
+SELECT *
+FROM nama_tabel
+LIMIT jumlah_data_yang_dikembalikan;
+Untuk membatasi jumlah baris yang akan ditampilkan pada sebuah tabel.
+
+OFFSET
+SELECT *
+FROM nama_tabel
+LIMIT jumlah_data_yang_dikembalikan
+OFFSET jumlah_baris_yang_dikembalikan;
+Untuk menentukan halaman dari record yang ditampilkan.
+
+DELETE
+DELETE
+FROM nama_tabel
+WHERE nama_kolom = ‘value’;
+Menghapus satu hingga beberapa baris yang terdapat pada tabel.
