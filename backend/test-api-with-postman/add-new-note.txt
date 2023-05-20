@@ -1,0 +1,22 @@
+Menambahkan Catatan Baru
+
+Untuk menambahkan catatan baru, pada halaman request ubahlah method GET menjadi POST. Kemudian isi request URL dengan localhost:5000/notes.
+
+Jangan dulu tekan tombol Send ya. Kita perlu memberikan data catatan yang dikirim melalui body request.
+
+Pilih tab Body.
+
+Lalu pilih opsi raw, kemudian ganti format text menjadi JSON, dan tuliskan struktur JSON berikut:
+
+    {
+        "title": "Catatan A",
+        "tags": ["Android", "Web"],
+        "body": "Isi dari catatan A"
+    }
+
+Sekarang silakan klik tombol Send. Anda akan melihat respons dari server.
+
+    Pastikan ketika melakukan permintaan server lokal Anda dalam keadaan berjalan yah. Bila terhenti, silakan jalankan kembali dengan perintah npm run start-dev pada Terminal proyek.
+
+Secara default Postman akan memformat respons agar lebih mudah membacanya. Anda bisa melihat respons asli yang belum terformat dengan memilih tab Raw. 
+

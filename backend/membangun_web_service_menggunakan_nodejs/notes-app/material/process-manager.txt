@@ -1,0 +1,17 @@
+npm install -g pm2.
+
+Setelah proses install selesai, masuk ke directory notes-app-back-end dengan perintah cd notes-app-back-end. Jalankan node process menggunakan pm2 dengan perintah:
+
+    pm2 start npm --name "notes-api" -- run "start-prod" 
+
+Di pm2, kita dapat me-restart proses secara manual dengan cara:
+
+    pm2 restart notes-api
+
+Atau, menghentikan prosesnya dengan cara:
+
+    pm2 stop notes-api
+
+Untuk menjalankan kembali proses, gunakan perintah:
+
+    pm2 start notes-api

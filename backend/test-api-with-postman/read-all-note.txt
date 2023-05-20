@@ -1,0 +1,9 @@
+Mendapatkan Seluruh Catatan yang Disimpan
+
+Sekarang kita coba untuk mendapatkan seluruh catatan yang disimpan. Ayo kita buat permintaan baru di tab berbeda. Silakan buka tab baru.
+
+Isikan request URL dengan localhost:5000/notes menggunakan method GET untuk mendapatkan seluruh catatan yang disimpan server.
+
+Kita tidak perlu melampirkan data apa pun pada permintaan kali ini. Jadi Anda bisa langsung klik tombol Send.
+
+Tada! Anda bisa melihat responnya. Karena kita baru menambahkan satu buat catatan saja, jadi baru ada satu yang muncul. 

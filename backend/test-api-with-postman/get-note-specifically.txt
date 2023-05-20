@@ -1,0 +1,13 @@
+Mendapatkan Catatan Secara Spesifik
+
+Lanjut kita coba konsumsi API untuk mendapatkan catatan secara spesifik. Seperti biasa, buka halaman request dengan tab baru.
+
+Pada request URL tuliskan localhost:5000/notes/<note id yang tersedia>. Anda bisa lihat id yang tersedia ketika melakukan permintaan mendapatkan seluruh catatan. Contohnya di sini, kita akan gunakan id ‘Y85P5Vxy9-ehb1pZ’ (tentu Anda tidak dapat menggunakan id ini).
+
+Untuk method yang digunakan, biarkan tetap GET.
+
+Kita tidak perlu melampirkan data apa pun pada permintaan kali ini. Jadi yuk, kirim permintaan dengan klik tombol Send. Anda akan mendapatkan respons catatan sesuai dengan id yang Anda minta.
+
+Anda juga bisa menguji untuk kasus yang menghasilkan respons gagal. Contohnya dengan melakukan permintaan dengan id yang tidak valid.
+
+Kirim permintaannya, lalu pastikan respons gagal yang didapat sesuai dengan ekspektasi Anda.

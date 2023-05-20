@@ -1,0 +1,6 @@
+Postman
+Postman merupakan tools yang sangat cocok untuk menguji sebuah API karena memiliki fungsi yang relatif lengkap sebagai API caller dalam melakukan HTTP Request. Bahkan untuk pengembangan API yang sudah kompleks, pengujian Postman dapat diintegrasikan ke dalam alur CI/CD.
+
+Postman merupakan tools yang sangat powerful dan mudah untuk digunakan. Ia memiliki graphical user interface (GUI) sehingga dapat digunakan dan dipahami oleh kalangan pemula sekalipun. Sebab, kita tak lagi berhadapan dengan kode yang rumit hanya untuk membuat HTTP request seperti cURL.
+
+Postman tersedia secara gratis dan dapat berjalan pada sistem operasi Windows, Linux, maupun macOS.

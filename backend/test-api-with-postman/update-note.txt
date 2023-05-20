@@ -1,0 +1,23 @@
+Mengubah Catatan
+
+Berikutnya kita coba untuk mengubah catatan yang sudah disimpan melalui Postman. Seperti biasa, silakan buka halaman request baru.
+
+Sekarang kita memiliki 4 tabs.
+
+Isikan request URL dengan localhost:5000/notes/<note id yang tersedia> dan gunakan HTTP method PUT. Untuk nilai note id, gunakan id yang sama pada request sebelumnya (mendapatkan catatan secara spesifik), di mana pada contoh kali ini kita menggunakan id ‘olf4TC3Z4B4mpXtH’.
+
+Untuk mengubah catatan, kita perlu melampirkan data catatan terbaru pada body request. Jadi yuk lampirkan struktur JSON berikut pada Body Request.
+
+    {
+       "title": "Catatan A Revisi",
+       "tags": ["Android", "Web"],
+       "body": "Isi dari catatan A revisi"
+    }
+
+Dengan begitu request akan tampak seperti ini.
+
+Permintaan siap dikirim. Silakan klik Send untuk mengirim dan lihat respons yang didapat.
+
+Catatan berhasil diubah! Untuk memastikan data catatan berubah, silakan lakukan permintaan pada tab permintaan sebelumnya (mendapatkan catatan secara spesifik) dan pastikan id catatan yang diminta sesuai.
+
+Good! Perubahan berhasil diterapkan. 

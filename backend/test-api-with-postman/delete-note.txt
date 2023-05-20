@@ -1,0 +1,10 @@
+Menghapus Catatan
+
+Terakhir, kita coba hapus catatan melalui Postman. Yuk kita buka kembali halaman permintaan baru.
+
+Isi request URL dengan localhost:5000/notes/<note id yang tersedia> dan gunakan HTTP method DELETE. Seperti biasa, gunakan note id yang sama seperti permintaan sebelumnya.
+
+Untuk menghapus catatan, kita tidak memerlukan data apa pun yang dilampirkan di body request. So it's all set! Silakan kirim permintaan dengan klik tombol Send.
+
+Catatan berhasil dihapus! Kita pastikan catatan benar-benar terhapus dengan melakukan permintaan ke catatan tersebut. Seharusnya permintaan akan gagal yah.
+

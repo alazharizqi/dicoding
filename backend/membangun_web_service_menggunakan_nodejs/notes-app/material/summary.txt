@@ -1,0 +1,14 @@
+Ikhtisar
+
+Anda berada di akhir dari modul Deploy Web Services. Mari kita uraikan materi yang sudah Anda pelajari untuk mempertajam pemahaman.
+
+    Anda dapat membuat akun AWS.
+    Anda sudah mengenal apa itu Amazon EC2.
+    Anda dapat membuat dan meluncurkan Amazon EC2.
+    Anda dapat menggunakan Amazon EC2 dengan teknik remote melalui SSH.
+    Anda dapat menggunakan Git pada proyek web service yang dibuat.
+    Anda dapat membuat akun Github.
+    Anda dapat mengunggah repository git ke Github.
+    Anda dapat menyiapkan kebutuhan deployment pada Amazon EC2.
+    Anda dapat men-deploy web service ke Amazon EC2.
+    Anda dapat memasang Process Manager pada Amazon EC2.
