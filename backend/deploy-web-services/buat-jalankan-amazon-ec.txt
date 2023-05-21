@@ -1,0 +1,59 @@
+Membuat dan Menjalankan Amazon EC2 Instance
+
+Di latihan sebelumnya, Anda sudah berhasil membuat Akun IAM yang memiliki full akses untuk services Amazon EC2. Dengan begitu, sekarang Anda layak untuk menggunakan layanan Amazon EC2.
+
+Untuk membuat EC2 Instance, silakan akses menu All Services -> Compute -> EC2.
+
+Atau, Anda bisa juga mencarinya menggunakan kolom pencarian yang ada di bar atas.
+
+Setelah memilih menu EC2, maka Anda akan diarahkan ke halaman utama service EC2.
+
+Gulir jendela browser ke bawah dan Anda akan melihat tombol Launch Instance.
+
+Klik tombol tersebut dan pilih Launch instance untuk membuat EC2 instance.
+
+    Tampilan baru (new experience)
+    Tampilan lama (old experience)
+
+Selanjutnya Anda akan diarahkan ke halaman Launch an instance.
+
+Silakan isi formulir yang tersedia dengan nilai dan instruksi berikut.
+
+    Name and tags: Web Server
+
+
+    Application and OS Images: Ubuntu Server (LTS terbaru) Free tier eligible.
+
+
+    Instance type: t2.micro (Free tier eligible)
+
+
+    Key pair (login):
+        Klik Create new key pair.
+        Key pair name: notes-api-webserver.
+        Klik Create key pair.
+        Pastikan berkas notes-api-webserver.pem terunduh.
+
+        Simpan berkas pem yang terunduh pada lokasi yang aman. Karena berkas ini digunakan ketika hendak mengoperasikan instance melalui SSH, jadi jangan sampai hilang yah. Agar mudah, taruh saja berkas tersebut di dalam folder proyek notes-app-back-end.
+
+
+    Network settings:
+        Klik Edit.
+        Security group name: app-server-sg.
+        Description: Allow custom TCP port 5000
+        Klik Add security group rule.
+        Isi security group baru dengan nilai:
+            Type: Custom TCP
+            Port range: 5000
+            Source type: Anywhere
+            Description: Application Port
+    Klik Launch Instance.
+    Voila! EC2 instance berhasil dibuat dan berjalan! Anda bisa melihat statusnya dengan mengeklik tombol View Instances.
+
+
+Penjelasan: Di bagian Network settings kita menentukan cara atau jalur apa saja untuk mengakses EC2 Instance yang dibuat. Secara default, AWS menambahkan SSH pada security group. Jalur SSH ini digunakan nanti oleh kita untuk mengoperasikan EC2 secara remote.
+
+Selain SSH, kita juga menambahkan security group lainnya agar web server kita dapat diakses secara publik. Yakni membuka TCP port 5000 (sesuai dengan yang digunakan oleh web server), dan source-nya Anywhere.
+
+Anda bisa lihat status dari instance tersebut adalah Running. Selanjutnya kita akan coba mengoperasikan instance melalui SSH.
+

@@ -1,0 +1,32 @@
+Membuat Akun AWS
+
+    Latihan ini bisa Anda lewati bila sudah memiliki akun AWS. Tapi kami merekomendasikan Anda untuk membuat akun baru guna memanfaatkan fitur free tier selama mengikuti kelas ini.
+
+Sebelum meluncurkan EC2 instance pertama Anda, tentu Anda perlu membuat akun di AWS terlebih dahulu. Di latihan ini, kita akan belajar bagaimana cara membuat akun di AWS. Silakan simak latihannya secara detail yah.
+
+Tahukah Anda? Akun baru akan mendapatkan fasilitas free tier dari AWS. Sehingga kita dapat menggunakan beberapa services di AWS secara gratis selama 12 bulan. Untuk mendaftar di AWS, dibutuhkan kartu kredit/debit yang valid, namun ini hanya digunakan untuk validasi identitas saja. Kartu kredit/debit Anda tidak akan dikenakan tagihan sampai nanti Anda memutuskan untuk meng-upgrade akun menjadi full-subscription.
+
+    Penting: Saat mendaftar akun AWS, Anda harus menyediakan saldo 1 dollar di kartu kredit/debit Anda. Biaya 1 dollar ini hanya bersifat sementara dan berfungsi untuk otorisasi kartu saja. Saldo 1 dollar tersebut akan dikembalikan lagi ke akun Anda dalam waktu beberapa hari.
+
+Jadi, siapkan kartu debit/kredit di samping Anda, ayo kita mulai buat akun AWS.
+
+Langkah pertama, buka web browser Anda dan kunjungi Homepage AWS.
+
+Anda akan diarahkan ke halaman pendaftaran akun. Silakan isi email dan nama akun AWS Anda. Jika selesai, klik tombol Verify email address.
+
+Selanjutnya cek inbox email yang didaftarkan, tuliskan kode verifikasi yang Anda dapat pada halaman registrasi yang tampak, dan klik tombol Verify.
+
+Setelah verifikasi email berhasil, buatlah password untuk akun AWS Anda dan klik tombol Continue.
+
+Anda akan diarahkan ke halaman Contact Information. Pada opsi Account Type pilih Personal. Lalu isikan data pribadi Anda dengan lengkap. Setelah selesai, klik Continue.
+
+Di halaman selanjutnya, Anda diharuskan mengisi informasi pembayaran melalui kartu debit/kredit. Anda juga bisa menggunakan virtual credit card yang disediakan beberapa bank di Indonesia. Jika sudah, maka Anda bisa langsung klik Verify and Continue.
+
+Jika kartu debit/kredit Anda valid, maka Anda akan diarahkan ke halaman selanjutnya. Silakan masukkan nomor telepon Anda dan isi security check sesuai pada layar Anda masing-masing, lalu klik Send SMS.
+
+Masukkan kode verifikasi yang dikirim Amazon ke ponsel Anda. Lalu klik Verify Code. Bila Verifikasi berhasil Anda akan diarahkan ke halaman Support Plan.
+
+Di halaman ini ada beberapa opsi Plan. Basic Plan, Developer Plan, dan Business Plan. Silakan pilih yang Basic Plan dengan klik tombol Free dan Complete sign up.
+
+Selamat! Akun AWS Anda sudah selesai dibuat. Dengan itu, Anda bisa mulai menggunakan banyak layanan AWS seperti Amazon EC2. Jika Anda ingin masuk ke console, silakan klik Go to the AWS Management Console.
+

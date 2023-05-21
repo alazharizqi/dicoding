@@ -1,0 +1,46 @@
+Mengoperasikan EC2 Instance Melalui SSH
+
+Setelah EC2 instance terbuat dan berjalan, kini saatnya kita menggunakannya. Untuk mengoperasikan EC2 instance, seperti yang sudah Anda ketahui, kita akan menggunakan protokol SSH. Bagaimana caranya? Yuk disimak.
+
+Kembali ke halaman EC2 instance.
+
+
+Pada halaman daftar instance, pilih instance yang baru saja kita buat.
+
+
+Pilih tombol Connect yang berada di atas,
+
+Anda akan diarahkan ke halaman Connect to Instance. 
+
+Di sini Anda bisa melihat beberapa opsi dalam mengakses EC2 Instance. Untuk mendapatkan informasi bagaimana mengakses melalui SSH, pilih tab SSH client.
+
+
+Silakan salin perintah yang berada di example, lalu paste perintah tersebut pada Terminal/PowerShell/CMD di folder tempat Anda meletakkan berkas pem.
+
+
+Tekan Enter untuk mengeksekusi perintah.
+
+Whops! Ada eror. Dari pesan eror tersebut menjelaskan bahwa berkas notes-api-webserver.pem miliki permission yang terlalu terbuka. Ini tidak aman untuk digunakan sebagai kunci dalam mengakses EC2 instance.
+
+Solusinya, kita perlu mengubah permission pada berkas .pem tersebut. Silakan eksekusi perintah berikut (sesuaikan dengan sistem operasi yang Anda gunakan).
+
+    Windows PowerShell/CMD
+    Linux/macOS Terminal
+
+    $path = ".\notes-api-webserver.pem"
+    # Reset to remove explicit permissions
+    icacls.exe $path /reset
+    # Give current user explicit read-permission
+    icacls.exe $path /GRANT:R "$($env:USERNAME):(R)"
+    # Disable inheritance and remove inherited permissions
+    icacls.exe $path /inheritance:r
+
+Kemudian coba ulangi perintah yang sebelumnya ada pada example.
+
+Tada! Kita berhasil terhubung dengan EC2 instance melalui SSH. Anda bisa bebas mengoperasikan instance layaknya komputer Anda sendiri.
+
+Namun, komputer ini tak bisa dioperasikan menggunakan mouse karena tidak ada graphical interface-nya. Semua operasi dilakukan menggunakan command line. Jika Anda belum familier dengan perintah-perintah dasar command line yang ada di Linux, sempatkan waktu untuk belajar dasar-dasar command line yang ada yah.
+
+Untuk keluar dari EC2 instance, Anda bisa gunakan perintah exit.
+
+Untuk masuk kembali ke EC2 instance, gunakan perintah yang sama seperti sebelumnya.

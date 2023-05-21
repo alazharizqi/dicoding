@@ -1,0 +1,50 @@
+Mengonfigurasi Kebutuhan pada EC2 Instances
+
+Setelah mempersiapkan local dan remote repository. Kita bisa lanjut membahas EC2 lebih dalam.
+
+Karena kini proyek web server sudah berada di Internet, lebih tepatnya pada remote repository GitHub secara public, maka sekarang kita bisa mengunduhnya pada EC2 instance.
+Mengunduh Repository
+
+Untuk mengunduh remote repository pada EC2 instance, tentu kita juga perlu memasang sistem git di EC2 instance. Good news! AMI yang kita gunakan (Ubuntu) telah terpasang sistem git secara built-in. Sehingga kita tidak perlu instal git secara mandiri. 
+
+Untuk memastikan hal tersebut, silakan akses kembali EC2 instance menggunakan SSH di PowerShell/CMD/Terminal.
+
+
+Kemudian tuliskan perintah git --version.
+
+
+Pastikan versi git muncul yah. Jika gagal, berarti git belum terpasang. Anda dapat dengan mudah memasang sistem git pada Ubuntu dengan perintah:
+
+    sudo apt-get install git 
+
+Selanjutnya, unduh proyek web server kita pada EC2. Proses unduh remote repository ke local repository dinamakan dengan cloning.
+
+Silakan kunjungi halaman remote repository pada browser. Kemudian klik tombol Code.
+
+
+Kemudian salin HTTPS URL remote repository dengan menggunakan tombol clipboard berikut: 
+
+
+Setelah itu kembali lagi ke SSH, tuliskan perintah berikut:
+
+    git clone <remote repository URL>
+
+Ganti <remote repository URL> dengan URL yang Anda salin. Contohnya:
+
+    git clone https://github.com/dimasmd/notes-app-back-end.git
+
+Eksekusi perintah tersebut dan proses cloning (unduh) repository pun akan berjalan.
+
+
+Untuk memastikan proyek tersimpan pada EC2 instance, Anda bisa tuliskan perintah ls.
+
+
+Masuk ke folder proyek tersebut dengan menggunakan perintah.
+
+    cd notes-app-back-end 
+
+
+Anda bisa tuliskan kembali perintah ls untuk melihat isi di dalam folder proyek.
+
+
+Akhirnya proyek web server kita sudah berada di EC2 instance. Selanjutnya tentu kita akan menjalankannya. 

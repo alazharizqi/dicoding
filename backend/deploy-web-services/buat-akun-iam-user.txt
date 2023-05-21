@@ -1,0 +1,73 @@
+Membuat IAM Users
+
+Untuk mulai membuat IAM users, silakan kunjungi kembali Homepage AWS.
+
+Klik tombol Sign In to the Console.
+
+Pilih opsi masuk menggunakan Root user, tuliskan email akun AWS Anda, dan pilih tombol Next.
+
+Selamat datang di AWS Management Console! Sebelum membuat IAM Users, ada beberapa hal yang perlu diketahui terlebih dahulu.
+
+Silakan lihat di bagian pojok kanan atas, lebih tepatnya informasi di sebelah support. Anda bisa melihat di sana terdapat tulisan Ohio.
+
+Informasi tersebut merupakan Region yang kita gunakan. Region di AWS merupakan letak geografis yang digunakan untuk menyimpan beberapa data center (Availability Zone). Saat ini kita menggunakan Region Ohio dalam menggunakan services AWS.
+
+Karena Ohio (Amerika Serikat) letaknya cukup jauh dengan Indonesia, kita akan mengubah Region ke yang lebih dekat agar mendapatkan latensi rendah. Untuk mengubahnya, silakan klik teks “Ohio” dan pilih Regionnya menjadi “Asia Pacific (Singapore) ap-southeast-1”.
+
+    Catatan: Jika Anda kesulitan dalam mengubah region, Anda bisa tetap menggunakan region default Anda saat ini. Kelas ini, tidak mengharuskan Anda untuk mengubah region ke ap-southeast-1.
+
+Nice! Sekarang kita sudah menggunakan Region paling dekat dengan Indonesia.
+
+    Catatan: Saat ini, region paling dekat adalah ap-southeast-3 yang berada di Jakarta. Materi kelas ditulis sebelum region Jakarta hadir di AWS.
+
+Yuk, sekarang kita mulai buat IAM Users. Silakan klik All services, kemudian lihat kategori Security, Identity, & Compliance.
+
+Pilih menu IAM. 
+
+Setelah itu, Anda akan diarahkan pada IAM dashboard.
+
+Lihat panel samping kiri, pilih menu Users.
+
+Kemudian klik tombol Add user. Anda akan diarahkan ke halaman pembuatan user baru.
+
+Silakan berikan nilai:
+
+    User name : <isi dengan username yang Anda inginkan>
+    Access type : AWS Management Console access.
+    Console password : Custom password. Kemudian isi password Anda.
+
+    Require password reset : uncheck. 
+
+Setelah semua terisi, klik Next: Permissions.
+
+Di halaman ini, Anda disuguhkan dengan tiga opsi pemilihan permission. Mari kita jabarkan.
+
+    Add user to group : memilih opsi permission dengan cara memasukkan user ke group. Group ini berisi serangkaian permission yang dapat diterapkan ke seluruh user yang berada di dalam grup tersebut. Ini adalah cara terbaik untuk mengelola user permission berdasarkan “job” atau peran dari user tersebut.
+    Copy permission from existing user : memilih opsi permission dari IAM user lain yang ada. Sayangnya, saat ini kita belum membuat IAM user sama sekali. Jadi opsi ini tidak bisa kita gunakan.
+
+    Attach existing policies directly : memilih opsi permission dengan cara langsung menunjuk permission apa saja yang berhak user akses. Opsi ini bisa kita gunakan, namun akan sulit untuk mengelola permission ke depannya.
+
+Berdasarkan pilihan yang ada, kita akan memilih opsi pertama. Namun untuk menggunakannya, kita perlu membuat user group terlebih dahulu. Silakan klik Create group.
+
+Isi Group name dengan “Developer”. Kemudian berikan permission untuk AmazonEC2FullAccess. Anda bisa memanfaatkan search box untuk mencari permission-nya.
+
+Setelah semuanya terisi dan terpilih dengan benar, klik Create group.
+
+Lanjut klik Next: Tags.
+
+Pada halaman ini, kita bisa memberikan tag atau label pada user. Tag ini berisi informasi tambahan yang perlu diberikan pada user yang hendak dibuat. Informasi dapat berupa nama, alamat email, ataupun jabatan. Saat ini, kita tidak perlu memberikan informasi tambahan apa pun. Jadi cukup klik Next: Review.
+
+Selanjutnya, Anda akan diarahkan ke halaman review pembuatan user. Di sini Anda bisa meninjau seperti apa nilai-nilai pada user yang akan dibuat. Jika semua sudah sesuai, klik Create User.
+
+Silakan unduh .csv untuk mendapatkan kredensial user baru. Gunakan kredensial tersebut untuk masuk ke AWS Management Console.
+
+Simpanlah berkas .csv pada tempat yang aman. Untuk melihat kredensialnya, Anda bisa buka berkas .csv yang diunduh dengan menggunakan Notepad ataupun Text Editor lainnya.
+
+Seperti yang Anda lihat pada gambar di atas, Anda akan mendapatkan username dan console login link. Console login link bersifat dinamis berdasarkan account id AWS Anda (yang diberikan coretan hitam).
+
+Untuk login menggunakan IAM user, silakan logout dari root user Anda. 
+
+Kemudian kunjungi alamat login link yang terdapat pada berkas .csv. 
+
+Isilah username dan password IAM user sesuai yang Anda buat. Kemudian klik Sign in.
+
