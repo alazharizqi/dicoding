@@ -1,0 +1,12 @@
+Postman Collection
+
+Postman collection merupakan tempat menyimpan kumpulan request. Kita bisa menganggap collection adalah sebuah folder yang menyimpan berkas, namun berkas itu adalah request.
+
+Setiap request yang Anda kirim di Postman sebenarnya akan tampak pada tab History di sidebar.
+
+Dalam penggunaan yang ringan, memilih dan menggunakan kembali request melalui History merupakan pengalaman yang cukup nyaman. Namun bila Anda banyak melakukan request, history request akan menumpuk tidak karuan. Dengan begitu, Anda akan membutuhkan waktu yang lama untuk memilah dan memilih request yang ingin digunakan kembali.
+
+Dengan adanya collection, request bisa Anda kelompokkan sehingga lebih mudah untuk diakses. Berikut adalah contoh collection Notes API Test.
+
+Melalui collection, Anda bisa menjalankan seluruh request yang ada di dalamnya sekaligus dengan urutan yang dapat Anda sesuaikan.
+

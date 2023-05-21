@@ -1,0 +1,14 @@
+Postman Environment
+
+Environment merupakan kumpulan dari variabel yang dapat digunakan pada request di Postman. Ketika melakukan pengujian otomatis, terkadang kita perlu menyimpan nilai pada sebuah variabel. Contohnya ketika melakukan request menambahkan catatan, kita akan mendapatkan id catatan tersebut dari server. Id tersebut perlu disimpan pada variabel agar dapat digunakan oleh request selanjutnya.
+
+Variabel tak hanya digunakan untuk kasus tersebut saja, melainkan dapat juga untuk menyimpan nilai token, auth-key, atau nilai lainnya yang dipakai selama proses uji.
+
+Environment dapat digunakan pada collection atau spesifik request.
+
+Untuk menggunakan variabel environment pada request, tuliskan nama variabel-nya yang dibungkus dengan kurung kurawal ganda seperti ini:
+
+    {{noteId}}
+
+Notasi tersebut dapat digunakan di request URL, parameters, headers, dan body data.
+

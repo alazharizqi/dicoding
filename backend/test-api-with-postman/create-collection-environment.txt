@@ -1,0 +1,26 @@
+Membuat Collection dan Environment
+
+Sebelum membuat request dan mengujinya, kita siapkan dulu collection dan environment yang dibutuhkan. Tutup semua tab halaman permintaan karena kita akan mulai kembali dari awal.
+
+Untuk membuat collection baru, silakan pilih tab Collection yang berada di samping kiri.
+
+Kemudian klik tombol “+” yang berada di samping kanannya.
+
+Collection baru akan terbentuk dengan nama “New Collection''. Silakan ubah nama dengan cara klik kanan -> Rename.
+
+Ubah namanya menjadi “Notes API Test”. 
+
+Great! Jangan dulu tambahkan request yah, kita buat environment dulu dan menggunakannya pada collection.
+
+Silakan pilih tab Environment pada sidebar.
+
+Klik Create a new Environment untuk membuat environment baru.
+
+Ubah nama “New Environment” dengan “Notes API Test”, lalu tambahkan variabel baru bernama noteId. Biarkan initial value dan current value tetap kosong.
+
+Simpan perubahan dengan klik tombol Save
+
+Selanjutnya, gunakan Note API Test sebagai environment aktif.
+
+Nice! Collection dan environment selesai kita siapkan. Selanjutnya mulai buat request dan mengujinya di dalam collection. 
+
