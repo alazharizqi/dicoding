@@ -1,0 +1,57 @@
+Menjalankan Postman Collection secara Terprogram dengan Newman
+
+Di materi sebelumnya, Anda sudah berhasil menjalankan Postman Collection dengan menggunakan collection runner yang disediakan oleh aplikasi Postman. Ketahuilah bahwa selain dengan aplikasi Postman, Anda juga bisa menjalankan Postman Collection secara terprogram tanpa perlu mengakses UI aplikasi Postman dengan menggunakan Newman.
+
+Menjalankan Postman Collection secara terprogram sangat berguna untuk mengotomasi proses pengujian. Pasalnya, Anda tidak bergantung terhadap interaksi pengguna seperti klik tombol melainkan cukup dengan perintah CLI.
+
+
+Persiapan sebelum menjalankan Postman Collection dengan Newman
+
+Di materi sebelumnya, kita sudah membuat Postman Collection bernama “Notes API Test” lengkap dengan pengujian di dalamnya. Selain Postman Collection, kita juga sudah membuat Postman Environment untuk kebutuhan environment variable selama pengujian berjalan.
+
+Dengan Newman, kita bisa menjalankan Postman Collection tanpa perlu berinteraksi dengan aplikasi Postman. Namun, sebelum kita bisa menggunakan Newman, kita perlu mengekspor Postman Collection dan Postman Environment menjadi sebuah berkas JSON. Ikuti langkah-langkah berikut untuk mengekspor Postman Collection dan Postman Environment.
+
+Pertama, buka aplikasi Postman dan pilih Collection bernama “Notes API Test” hingga tampak tampilan seperti gambar di bawah ini.
+
+Selanjutnya, klik tombol titik tiga, kemudian pilih opsi Export.
+
+Aplikasi akan menampilkan Pop-up Export Collection. Pilih opsi Collection v2.1 sebagai format berkas JSON dan klik tombol Export untuk memulai proses ekspor.
+
+Agar mudah dalam menjalankan pengujiannya kelak, kami sarankan untuk simpan berkas hasil ekspor di folder proyek notes-app-back-end dan sesuaikan nama berkasnya menjadi notes-api-test.postman_collection.json.
+
+Proses ekspor Postman Collection selesai! Selanjutnya kita perlu mengekspor juga Postman Environment.
+
+Kembali lagi ke aplikasi Postman dan pilih environment Notes API Test.
+
+Selanjutnya, klik tombol titik tiga, kemudian pilih opsi Export.
+
+Sama seperti berkas Postman Collection, kami merekomendasikan untuk menyimpan berkasnya di dalam folder proyek notes-app-back-end dan ubah nama berkas menjadi notes-api-test.postman_environment.json.
+
+Memasang Newman dan Menjalankan Postman Collection
+
+Setelah kita memiliki berkas JSON dari Postman Collection dan Postman Environment kita bisa mulai beranjak untuk menjalankannya menggunakan Newman. Ikuti langkah-langkah dari mulai memasang Newman dan menjalankan Postman Collection.
+
+Newman merupakan aplikasi dalam bentuk binary yang dijalankan via CLI. Untuk menggunakan Newman, kita perlu mengunduh dan memasang binary tersebut. Berutunglah karena binary Newman dapat diunduh dan dipasang dengan mudah dengan menggunakan JavaScript Package Manager, seperti npm dan yarn.
+
+Untuk memasang Newman menggunakan npm, pasanglah package newman secara global dengan perintah.
+
+    npm install newman --g
+
+Tunggu hingga npm berhasil memasang package newman.
+
+Setelah berhasil terpasang perintah newman harusnya tersedia pada Terminal, Powershell, atau CMD di komputer Anda.
+
+Oke. Selanjutnya kita akan menjalankan berkas Postman Collection dengan menggunakan Newman. Agar mudah dalam menjalankannya, Anda bisa manfaatkan Terminal yang ada di VSCode karena berkas Postman Collection dan Postman Environment ada di dalam folder proyek notes-app-back-end.
+
+Bukalah proyek notes-app-back-end dan siapkan bilah Terminal.
+
+Sebelum menjalankan Postman Collection, pastikan web server sedang berjalan. Jika tidak, jalankan dulu dengan perintah berikut ini.
+
+    npm run start-dev
+
+Setelah web server dipastikan berjalan, selanjutnya kita bisa jalankan Postman Collection dengan Newman melalui perintah di bawah ini.
+
+    newman run notes-api-test.postman_collection.json --environment notes-api-test.postman_environment.json
+
+Catatan: Anda bisa membuka Terminal lebih dari satu pada VSCode dengan menekan tombol + pada bilah Terminal.
+

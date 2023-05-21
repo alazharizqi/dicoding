@@ -1,0 +1,27 @@
+Menjalankan Seluruh Permintaan pada Collection
+
+Selamat yah Anda sudah berhasil menuliskan automate testing menggunakan Postman. Melalui automate testing ini diharapkan Anda tidak perlu lagi memeriksa hasil response secara manual ketika mengirimkan permintaan menggunakan Postman. Pengujian yang sudah Anda buat bisa menjadi patokan keberhasilan fungsionalitas API ketika ingin mengembangkan API ini kedepannya. Anda tidak perlu khawatir untuk mengotak-atik kode yang membuat fungsionalitas api gagal. Selama pengujiannya berhasil, fungsionalitas API dapat dipastikan tetap aman.
+
+Saat ini Anda memiliki lima skenario request pada collection.
+
+Keuntungan mengelompokkan permintaan menggunakan collection adalah Anda bisa menjalankan permintaan-permintaan secara berurutan dengan sekali klik. Caranya, pilih collection Notes API Test.
+
+Kemudian klik tombol Run seperti gambar di atas.
+
+Pastikan urutan permintaannya benar. Awali permintaan dengan skenario menambahkan catatan, mendapatkan seluruh catatan, mendapatkan catatan secara spesifik, mengubah catatan, dan terakhir menghapus catatan.
+
+Setelah urutannya sesuai, klik tombol Run Notes API Test.
+
+Anda bisa lihat hasil permintaan serta pengujiannya seketika. Praktis bukan?
+
+Catatan
+Mulai dari Maret 2023, pengguna gratis Postman versi 10.x.x memiliki batasan dalam menjalankan Postman Collection melalui UI sebanyak 25 kali dalam sebulan. Jika Anda sudah mencapai batasan tersebut, tetapi masih perlu menjalankan collection, terdapat dua solusi yang bisa Anda ambil.
+
+    (Rekomendasi) Jalankan Postman Collection secara terprogram menggunakan Postman CLI atau Newman.
+    Gunakan Postman versi 9 stabil yang dapat diunduh melalui tautan:
+        Windows
+        Linux
+        macOS
+
+Ke depannya Anda bisa tambahkan permintaan dengan skenario lain, termasuk skenario negatif. Contohnya permintaan untuk meng-update note namun dengan id yang tidak ditemukan; menambahkan catatan namun tanpa melampirkan data body apa pun; atau skenario lainnya. Dengan begitu, API yang Anda buat dapat dipastikan berfungsi sesuai yang dikehendaki.
+
