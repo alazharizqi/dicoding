@@ -1,0 +1,13 @@
+Syntax	Description
+
+[attr]  Menargetkan elemen yang menerapkan atribut attr.
+
+[attr=value]    Menargetkan elemen yang menerapkan atribut attr dengan nilai value.
+
+[attr~=value]   Menargetkan elemen yang menerapkan atribut attr dan salah satu nilainya adalah value.
+
+[attr^=value]   Menargetkan elemen yang menerapkan atribut attr dan nilainya diawali dengan nilai value.
+
+[attr$=value]   Menargetkan elemen yang menerapkan atribut attr dan nilainya diakhiri dengan value.
+
+[attr*=value]   Menargetkan elemen yang menerapkan atribut attr dan nilainya mengandung value.
