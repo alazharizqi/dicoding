@@ -1,0 +1,4 @@
+/* Rule akan diterapkan pada elemen header yang berada tepat setelah elemen img */
+div p {
+    background-color: yellow;
+  }
