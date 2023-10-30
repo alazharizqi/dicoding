@@ -1,0 +1,114 @@
+/* line height */
+.ln2 {
+    line-height: 2;
+  }
+  
+  .ln200 {
+    line-height: 200%;
+  }
+  
+  .ln2em {
+    line-height: 2em;
+  }
+
+
+/* text alignment */
+main {
+    width: 80%;
+    margin: 0 auto;
+  
+    border: 1px solid black;
+  }
+  
+  p {
+    border: 1px solid black;
+  }
+  
+  .tl-left {
+    text-align: left;
+  }
+  
+  .tl-right {
+    text-align: right;
+  }
+  
+  .tl-center {
+    text-align: center;
+  }
+  
+  .tl-justify {
+    text-align: justify;
+  }
+
+/* text decoration */
+.decoration-none {
+    text-decoration: none;
+  }
+
+/* text transform */
+  main {
+    font-family: sans-serif;
+  }
+  
+  .transform-none {
+    text-transform: none;
+  }
+  
+  .transform-capitalize {
+    text-transform: capitalize;
+  }
+  
+  .transform-lowercase {
+    text-transform: lowercase;
+  }
+  
+  .transform-uppercase {
+    text-transform: uppercase;
+  }
+
+/* letter spacing */
+main {
+    font-family: sans-serif;
+  }
+  
+  .letter-spacing {
+    letter-spacing: 4px;
+  }
+  
+  .word-spacing {
+    word-spacing: 1.5em;
+  }
+
+/* text shadow */
+main {
+    font-family: sans-serif;
+  }
+  
+  p {
+    font-size: 2rem;
+  }
+  
+  .one {
+    text-shadow: 2px 2px 0px #000000;
+    background-color: #eeeeee;
+    color: #666666;
+  }
+  
+  .two {
+    text-shadow: 4px 4px 3px #666666;
+    background-color: #dddddd;
+    color: #666666;
+  }
+  
+  .three {
+    text-shadow: 4px 4px 7px #111111;
+    background-color: #cccccc;
+    color: #ffffff;
+  }
+  
+  .four {
+    text-shadow: -2px -2px #666666;
+    background-color: #cccccc;
+    color: #bbbbbb;
+  }
+  
