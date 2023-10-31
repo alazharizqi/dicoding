@@ -145,3 +145,21 @@ li {
     Nilai ketiga (opsional): menentukan tingkat keburaman yang harus diterapkan pada bayangan.
     Nilai keempat (opsional): tingkat sebaran (spread) bayangan. Semakin besar nilai yang ditentukan, bayangan yang tampak akan semakin luas.
     Nilai kelima: menentukan warna yang digunakan pada bayangan. */
+
+/* rounded corner */
+.rounded {
+    width: 300px;
+    padding: 20px;
+    border: 4px solid deeppink;
+  
+    border-radius: 10px;
+}
+.rounded {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 10px;
+}
+.rounded {
+    border-radius: 10px 5px 10px 5px;
+}
