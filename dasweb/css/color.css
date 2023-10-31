@@ -1,0 +1,26 @@
+body {
+        /* Warna hijau menggunakan format RGB */
+        color: rgb(78,231,23);
+     
+        /* Warna hijau Menggunakan format HEX */
+        color: #4ee717;
+         
+        /* Warna hijau menggunakan format HSL (hanya di CSS3)*/
+        color: hsl(104, 82%, 50%);
+
+        color: black;
+        color: white;
+        color: blue;
+}
+
+p {
+    background-color: red;
+  }
+  
+  p.opacity-50 {
+    opacity: 50%;
+  }
+  
+  p.opacity-100 {
+    opacity: 100%;
+  }
