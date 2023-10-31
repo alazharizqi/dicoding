@@ -97,3 +97,15 @@ body {
     /* top dan bottom bernilai 10px, left dan right bernilai 15px */
     margin: 10px 15px;
 }
+
+/* centering content */
+.box {
+    width: 50%;
+    border: 4px solid darkblue;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .box.center {
+    margin: 0 auto;
+  }
