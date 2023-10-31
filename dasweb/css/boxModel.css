@@ -1,0 +1,50 @@
+.box {
+    height: 300px;
+    width: 300px;
+    background-color: #11c5c6;
+  }
+  
+  p {
+    height: 75%;
+    width: 75%;
+    background-color: #fbdd1c;
+  }
+
+  .content {
+    max-width: 800px;
+    height: 400px;
+  
+    margin-left: auto;
+    margin-right: auto;
+    background-color: deeppink;
+  }
+  
+  p {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+/* 
+  visible
+  Visible merupakan nilai default pada properti ini. Konten yang tidak tertampung (overflow) akan tetap ditampilkan seperti pada standarnya.
+  hidden
+  Jika terjadi overflow, konten yang tidak tertampung akan disembunyikan.
+  scroll
+  Memunculkan scroll bar pada pinggir elemen sehingga konten yang tidak tertampung akan ditampilkan dengan scroll bar. Jika menggunakan nilai ini, scroll bar akan tetap muncul walaupun konten tidak terjadi overflow.
+  auto
+  Sama seperti scroll, hanya jika tidak terjadi overflow, nilai visible yang akan diterapkan. */
+  div {
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+    border: 10px solid cornflowerblue;
+    padding: 20px;
+  }
+  
+  .content {
+    box-sizing: content-box;
+  }
+  
+  .box {
+    box-sizing: border-box;
+  }
+  
