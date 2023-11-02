@@ -1,0 +1,66 @@
+/* Normal Flow/Static Flow
+Ia adalah default behaviour yang dimiliki elemen, yakni setiap elemen block akan ditampilkan dalam baris baru ketika dibuat. Jadi, setiap elemen block selalu muncul di bawah dari elemen block sebelumnya. Bahkan, jika masih terdapat ruang kosong pada samping elemennya, mereka tidak akan tampak bersebelahan.
+Relative Positioning
+Membuat elemen dapat melakukan perpindahan posisi ke atas, kanan, bawah, ataupun kiri dari posisi semula atau posisi seharusnya elemen tersebut berada. Perpindahan posisi ini tidak akan berpengaruh terhadap posisi elemen di sekitarnya karena ketika menggunakan relative positioning elemen tersebut akan dipindahkan dari normal flow.
+Absolute Positioning
+Sama seperti relative, elemen akan dipindahkan keluar dari normal flow sehingga kita dapat memindahkan posisi elemen ke atas, kanan, bawah, ataupun kiri secara leluasa tanpa mengganggu elemen di sekitarnya. Namun, posisinya relatif terhadap jendela browser dan posisinya dapat relatif pada induk elemen selama induk elemen juga berada di luar dari normal flow.
+Fixed Positioning
+Ia merupakan absolute position. Namun, posisinya selalu relatif pada jendela browser, bahkan ketika pengguna melakukan scrolling posisinya akan tetap tampak pada posisinya di layar. */
+
+/* normal flow */
+h1 {
+    background-color: #aaaaaa;
+    padding: 30px;
+  }
+  
+  p {
+    width: 450px;
+  }
+  
+/* relative positioning */
+h1 {
+    background-color: #aaaaaa;
+    padding: 30px;
+  }
+  
+  p {
+    width: 450px;
+  }
+  
+  .relative {
+    position: relative;
+    top: 10px;
+    left: 100px;
+  }
+
+/* absolute positioning */
+.parent {
+    width: 500px;
+    margin: 0 auto;
+    border: 4px solid black;
+    padding: 20px;
+  }
+  
+  h1 {
+    width: 250px;
+  }
+  .absolute {
+    position: absolute;
+    top: 0;
+    left: 50px;
+  }
+
+/* fixed positioning */
+h3 {
+    padding: 10px;
+    background-color: #aaaaaa;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
