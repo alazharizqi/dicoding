@@ -1,0 +1,101 @@
+/* Display
+Di materi sebelumnya, kita telah menggunakan properti display untuk mengatur sifat elemen dengan value block dan inline. Nah, kali ini, jika kita ingin mendefinisikan elemen agar disusun sebagai flexible box, kita dapat menggunakan properti yang sama. */
+    .container {
+      display: flex;
+    }
+
+
+    .container {
+        display: flex;
+        flex-direction: row, row-reverse, column, column-reverse;
+      }  
+  /* Berikut adalah penjelasan value dari properti flex-direction.
+  
+      row: flex items akan disusun secara horizontal dari kiri ke kanan.
+  
+      row-reverse: flex items akan disusun secara horizontal, tetapi berarah terbalik (kanan ke kiri).
+  
+      column: flex items akan disusun secara vertikal dari atas ke bawah.
+  
+      column-reverse: flex items akan disusun secara vertikal, tetapi dengan arah terbalik (bawah ke atas). */
+
+
+      .container {
+        display: flex;
+        flex-wrap: nowrap, wrap, wrap-reverse;
+      }  
+  /* Berikut adalah penjelasan setiap value dari properti flex-wrap.
+  
+      nowrap: flex items hanya akan ditempatkan dalam satu baris.
+  
+      wrap: flex items akan ditampilkan dalam multiple lines, yakni dari atas ke bawah.
+  
+      wrap-reverse: flex items akan ditampilkan dalam multiple lines, tetapi dari arah bawah ke atas. */
+
+
+      .container {
+        display: flex;
+        justify-content: flex-start, flex-end, center, space-between, space-around, space-evenly;
+      }
+  /* Berikut adalah penjelasan setiap value dari properti justify-content.
+  
+      flex-start: peletakan child element akan dimulai dari main-start.
+  
+      flex-end: peletakan child element dimulai dari main-end.
+  
+      center: child element akan diletakkan di tengah parent child.
+  
+      space-between: child element akan tersusun secara merata, elemen pertama berada di tepi main-start dan elemen kedua berada di tepi main-end. Jika child element lebih dari dua, elemen lainnya akan didistribusikan berada di tengah dengan jarak yang sama.
+  
+      space-around: setiap child elemen akan memiliki panjang celah yang sama pada sisi horizontal.
+  
+      space-evenly: setiap child elemen akan memiliki jarak yang setara, termasuk jarak ke tepi main-start dan main-end. */
+
+
+      .container {
+        display: flex;
+        align-items: stretch, flex-start, flex-end, center, baseline;
+      }
+  
+  /* Berikut adalah penjelasan setiap value dari properti align-items.
+  
+      stretch: melebar hingga memenuhi container dalam cross axis. Setiap child element akan memiliki nilai height yang sama, meskipun isi konten berbeda.
+  
+      flex-start: setiap child elemen akan memiliki ukuran height sesuai dengan isi konten serta seluruhnya akan berada di tepi cross-start.
+  
+      flex-end: setiap child element akan memiliki ukuran height sesuai dengan isi konten serta seluruhnya akan berada di tepi cross-end.
+  
+      center: setiap child elemen memiliki ukuran height sesuai dengan isi konten dan secara vertikal posisi elemen berada di tengah.
+  
+      baseline: nilai pada asalnya akan menyerupai flex-start. Namun, jika konten pertama pada masing-masing child element memiliki ukuran height yang berbeda, child element lainnya akan menyesuaikan posisinya secara cross axis dari cross-start. */
+
+
+      .container {
+        display: flex;
+        align-content: flex-start, flex-end, center, space-between, space-around, space-evenly;
+      }
+  
+  /* Berikut adalah penjelasan dari setiap value dari properti ini.
+  
+      normal (default): Jika kita tidak menerapkan value pada align content, flex items akan diposisikan secara default.
+  
+      flex-start: flex items di tata pada permulaan flex container.
+  
+      flex-end: flex items di tata pada akhir flex container.
+  
+      center: flex items diposisikan di tengah flex container.
+  
+      space-between: flex items akan disebar secara merata, yang mana item pertama akan diposisikan pada cross-start dan item terakhir akan diposisikan pada cross-end.
+  
+      space-around: flex items akan disebar secara merata dengan jarak celah yang sama juga.
+  
+      space-evenly: flex items akan disebar secara merata dengan jarak yang merata juga. */
+
+
+      .container {
+        display: flex;
+        gap: 1rem; /*diterapkan secara vertikal dan horizontal dengan nilai yang sama*/
+        gap: 1rem 2rem; /*diterapkan secara vertikal dan horizontal*/
+        row-gap: 1rem; /*diterapkan secara horizontal*/
+        column-gap: 1rem; /*diterapkan secara vertikal*/
+      }
