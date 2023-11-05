@@ -1,0 +1,19 @@
+.item {
+    order: 5; /*default is 0*/
+  }
+
+  .item {
+    flex-grow: 1; /*default is 0*/
+  }
+
+  .item {
+    flex-shrink: 0; /*default is 1*/
+  }
+
+  .item {
+    flex-basis: 1rem, 25%, auto; /*default is auto*/
+  }
+
+  .items {
+    align-self: auto, flex-start, flex-end, center, baseline, stretch; /*default is auto*/
+  }
