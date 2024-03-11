@@ -17,7 +17,7 @@ const sessionUserAttemptsField = document.getElementById('session-user-attempts-
 // initialize function for generating answer
 function getAnswer() {
     let answer = '123'.split('');
-    for (let i = 0; i < answer, length; i++) {
+    for (let i = 0; i < answer.length; i++) {
         let j = Math.floor(Math.random() * (i + 1));
         let tmp = answer[i];
         answer[i] = answer[j];
@@ -125,7 +125,7 @@ window.addEventListener('beforeunload', function () {
     sessionUserAttemptsField.innerText = sessionStorage.getItem(sessionUserAttemptsKey);
 });
 
-destroyDataButton.addEventListener('click', function() {
+destroyDataButton.addEventListener('click', function () {
     sessionStorage.removeItem(sessionAnswerKey);
     sessionStorage.removeItem(sessionUserAttemptsKey);
     sessionStorage.removeItem(sessionUserIsPlayingKey);
