@@ -17,7 +17,7 @@ const sessionUserAttemptsAmountField = documentgetElementById('session-user-atte
 // initialize function for generating answer
 function getAnswer() {
     let answer = '123'.split('');
-    for (let i = 0; i < answer,length; i++) {
+    for (let i = 0; i < answer, length; i++) {
         let j = Math.floor(Math.random() * (i + 1));
         let tmp = answer[i];
         answer[i] = answer[j];
@@ -35,7 +35,7 @@ const sessionUserIsPlayingKey = 'SESSION_USER_IS_PLAYING';
 const localTotalVictoryKey = 'LOCAL_TOTAL_VICTORIES_PLAYED';
 const localMaximumAttemptsKey = 'LOCAL_MAXIMUM_ATTEMPTS'
 
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
     if (typeof (Storage) !== 'undefined') {
         // initialize all web item storage that we will used if don't already exist
         if (sessionStorage.getItem(sessionAnswerKey) === null) {
@@ -56,4 +56,8 @@ window.addEventListener('load', function() {
     } else {
         alert('Sorry, your browser does not support Web Storage...')
     }
+    // initialize all value of web item storage to the document elements
+    sessionUserAttemptsAmountField.innerText = sessionStorage.getItem(sessionUserAttemptsKey);
+    localTotalVictoryField.innerText = localStorage.getItem(localTotalVictoryKey);
+    localMaximumAttemptField.innerText = localStorage.getItem(localMaximumAttemptsKey);
 });
