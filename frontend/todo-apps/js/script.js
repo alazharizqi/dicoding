@@ -44,7 +44,7 @@ function findTodoIndex(todoId) {
 
 function makeTodo(todoObject) {
 
-  const {id, task, timestamp, isCompleted} = todoObject;
+  const { id, task, timestamp, isCompleted } = todoObject;
 
   const textTitle = document.createElement('h2');
   textTitle.innerText = task;
@@ -141,6 +141,10 @@ document.addEventListener('DOMContentLoaded', function () {
     event.preventDefault();
     addTodo();
   });
+
+  if (isTorageExist()) {
+    loadDataFromStorage();
+  }
 });
 
 
@@ -183,4 +187,17 @@ function isTorageExist() {
 
 document.addEventListener(SAVED_EVENT, function () {
   console.log(localStorage.getItem(STORAGE_KEY));
-})
+});
+
+function loadDataFromStorage() {
+  const serializeData = localStorage.getItem(STORAGE_KEY);
+  let data = JSON.parse(serializeData);
+
+  if (data !== null) {
+    for (const todo of data) {
+      todos.push(todo);
+    }
+  }
+
+  document.dispatchEvent(new Event(RENDER_EVENT));
+}
