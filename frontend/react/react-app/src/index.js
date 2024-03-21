@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import FirstElement from './FirstElement';
-import Biodata from './Biodata';
+// import Biodata from './Biodata';
+import Element from './Element';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Biodata/>
+    <Element/>
   </React.StrictMode>
 );
 
