@@ -1,4 +1,5 @@
 import React from "react";
+// import { createRoot } from "react-dom";
 
 function Button({ link }) {
     return <a href={link}>Find out more</a>
@@ -45,7 +46,7 @@ function Header({ title, subtitle }) {
 function News() {
     const someNews = [
         {
-            title: 'CNN Acuire BEME',
+            title: 'CNN Acuire BEME 1',
             date: 'March 10, 2021',
             content: 'CNN purchased Casey Neistat\'s Beme',
             image: 'https://source.unsplash.com/user/erondu/600x400',
@@ -53,7 +54,7 @@ function News() {
             link: '#'
         },
         {
-            title: 'CNN Acuire BEME',
+            title: 'CNN Acuire BEME 2',
             date: 'March 10, 2021',
             content: 'CNN purchased Casey Neistat\'s Beme',
             image: 'https://source.unsplash.com/user/erondu/600x400',
@@ -61,7 +62,7 @@ function News() {
             link: '#'
         },
         {
-            title: 'CNN Acuire BEME',
+            title: 'CNN Acuire BEME 3',
             date: 'March 10, 2021',
             content: 'CNN purchased Casey Neistat\'s Beme',
             image: 'https://source.unsplash.com/user/erondu/600x400',
@@ -102,8 +103,14 @@ function News() {
             <Card {...someNews[0]} />
             <Card {...someNews[1]} />
             <Card {...someNews[2]} />
+
+            {/* with map */}
+            {someNews.map((news) => <Card {...news} key={news.title} />)}
         </div>
     );
 }
+
+// const root = createRoot(document.getElementById("root"));
+// root.render(<News />);
 
 export default News;
