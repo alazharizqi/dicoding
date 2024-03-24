@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // import FirstElement from './FirstElement';
 // import Biodata from './Biodata';
-import Element from './Element';
+// import Element from './Element';
+// import FilterableProductTable from './FilterableProductTable';
+import News from './News';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Element/>
+    <News />
   </React.StrictMode>
 );
 
