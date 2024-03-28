@@ -1,9 +1,10 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import MyComponent from "./components/MyComponent";
+// import MyComponent from "./components/MyComponent";
 
 import './styles/style.css';
-import CounterApp from "./components/counter-app/CounterApp";
+// import CounterApp from "./components/counter-app/CounterApp";
+import ContactApp from "./components/contact-app/ContactApp";
 
 const root = createRoot(document.getElementById('root'));
 root.render(
@@ -13,5 +14,6 @@ root.render(
     //     <MyComponent name="Zharsuke" />
 
     // </div>
-    <CounterApp />
+    // <CounterApp />
+    <ContactApp />
 );
