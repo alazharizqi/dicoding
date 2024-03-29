@@ -4,7 +4,8 @@ import { createRoot } from "react-dom/client";
 
 import './styles/style.css';
 // import CounterApp from "./components/counter-app/CounterApp";
-import ContactApp from "./components/contact-app/ContactApp";
+// import ContactApp from "./components/contact-app/ContactApp";
+import MyForm from "./components/form-app/MyForm";
 
 const root = createRoot(document.getElementById('root'));
 root.render(
@@ -15,5 +16,6 @@ root.render(
 
     // </div>
     // <CounterApp />
-    <ContactApp />
+    // <ContactApp />
+    <MyForm />
 );
